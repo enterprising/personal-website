@@ -1,0 +1,955 @@
+2017-12-26 15:44:14.680 [background-preinit] DEBUG org.jboss.logging - Logging Provider: org.jboss.logging.Slf4jLoggerProvider found via system property
+2017-12-26 15:44:14.804 [main] ERROR org.springframework.boot.SpringApplication - Application startup failed
+org.springframework.context.ApplicationContextException: Failed to load context listener class [com.sparrow.hadmin.config.listener.ApplicationEventListener]; nested exception is java.lang.ClassNotFoundException: com.sparrow.hadmin.config.listener.ApplicationEventListener
+	at org.springframework.boot.context.config.DelegatingApplicationListener.getListeners(DelegatingApplicationListener.java:91)
+	at org.springframework.boot.context.config.DelegatingApplicationListener.onApplicationEvent(DelegatingApplicationListener.java:57)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:172)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:165)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:139)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:122)
+	at org.springframework.boot.context.event.EventPublishingRunListener.environmentPrepared(EventPublishingRunListener.java:74)
+	at org.springframework.boot.SpringApplicationRunListeners.environmentPrepared(SpringApplicationRunListeners.java:54)
+	at org.springframework.boot.SpringApplication.prepareEnvironment(SpringApplication.java:325)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:296)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1118)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1107)
+	at net.tanpeng.tanpen.TanpenApplication.main(TanpenApplication.java:12)
+Caused by: java.lang.ClassNotFoundException: com.sparrow.hadmin.config.listener.ApplicationEventListener
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:335)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	at org.springframework.util.ClassUtils.forName(ClassUtils.java:250)
+	at org.springframework.boot.context.config.DelegatingApplicationListener.getListeners(DelegatingApplicationListener.java:83)
+	... 12 common frames omitted
+2017-12-26 15:49:18.364 [main] DEBUG net.tanpeng.tanpen.config.listener.ApplicationEventListener - 初始化环境变量
+2017-12-26 15:49:18.676 [main] INFO  net.tanpeng.tanpen.TanpenApplication - Starting TanpenApplication on localhost with PID 13780 (/Users/enterprising/IdeaProjects/tanpen/target/classes started by enterprising in /Users/enterprising/IdeaProjects/tanpen)
+2017-12-26 15:49:18.677 [main] DEBUG net.tanpeng.tanpen.TanpenApplication - Running with Spring Boot v1.5.8.RELEASE, Spring v4.3.12.RELEASE
+2017-12-26 15:49:18.678 [main] INFO  net.tanpeng.tanpen.TanpenApplication - No active profile set, falling back to default profiles: default
+2017-12-26 15:49:18.823 [main] DEBUG net.tanpeng.tanpen.config.listener.ApplicationEventListener - 初始化环境变量完成
+2017-12-26 15:49:18.900 [background-preinit] DEBUG org.jboss.logging - Logging Provider: org.jboss.logging.Slf4jLoggerProvider found via system property
+2017-12-26 15:49:20.169 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2017-12-26 15:49:20.170 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.23
+2017-12-26 15:49:20.238 [localhost-startStop-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2017-12-26 15:49:20.895 [main] DEBUG net.tanpeng.tanpen.config.listener.ApplicationEventListener - 应用刷新
+2017-12-26 15:49:20.903 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2017-12-26 15:49:20.910 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2017-12-26 15:49:20.926 [main] INFO  org.apache.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+2017-12-26 15:49:20.951 [main] DEBUG net.tanpeng.tanpen.config.listener.ApplicationEventListener - 应用已启动完成
+2017-12-26 15:49:20.952 [main] INFO  net.tanpeng.tanpen.TanpenApplication - Started TanpenApplication in 2.884 seconds (JVM running for 3.854)
+2017-12-26 15:49:20.953 [main] DEBUG net.tanpeng.tanpen.TanpenApplication - start success
+2017-12-26 15:51:02.693 [http-nio-8080-exec-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2017-12-26 15:55:52.205 [Thread-10] DEBUG net.tanpeng.tanpen.config.listener.ApplicationEventListener - 应用关闭
+2017-12-26 16:31:34.092 [main] DEBUG net.tanpeng.tanpen.config.listener.ApplicationEventListener - 初始化环境变量
+2017-12-26 16:31:34.266 [main] INFO  net.tanpeng.tanpen.TanpenApplication - Starting TanpenApplication on localhost with PID 15902 (/Users/enterprising/IdeaProjects/tanpen/target/classes started by enterprising in /Users/enterprising/IdeaProjects/tanpen)
+2017-12-26 16:31:34.266 [main] DEBUG net.tanpeng.tanpen.TanpenApplication - Running with Spring Boot v1.5.8.RELEASE, Spring v4.3.12.RELEASE
+2017-12-26 16:31:34.267 [main] INFO  net.tanpeng.tanpen.TanpenApplication - No active profile set, falling back to default profiles: default
+2017-12-26 16:31:34.368 [main] DEBUG net.tanpeng.tanpen.config.listener.ApplicationEventListener - 初始化环境变量完成
+2017-12-26 16:31:34.506 [background-preinit] DEBUG org.jboss.logging - Logging Provider: org.jboss.logging.Slf4jLoggerProvider found via system property
+2017-12-26 16:31:36.019 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2017-12-26 16:31:36.021 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.23
+2017-12-26 16:31:36.120 [localhost-startStop-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2017-12-26 16:31:38.624 [main] DEBUG net.tanpeng.tanpen.config.listener.ApplicationEventListener - 应用刷新
+2017-12-26 16:31:38.635 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2017-12-26 16:31:38.643 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2017-12-26 16:31:38.663 [main] INFO  org.apache.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+2017-12-26 16:31:38.706 [main] DEBUG net.tanpeng.tanpen.config.listener.ApplicationEventListener - 应用已启动完成
+2017-12-26 16:31:38.708 [main] INFO  net.tanpeng.tanpen.TanpenApplication - Started TanpenApplication in 4.943 seconds (JVM running for 6.431)
+2017-12-26 16:31:38.708 [main] DEBUG net.tanpeng.tanpen.TanpenApplication - start success
+2017-12-26 16:32:06.026 [http-nio-8080-exec-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2017-12-26 16:35:30.951 [Thread-15] DEBUG net.tanpeng.tanpen.config.listener.ApplicationEventListener - 应用关闭
+2017-12-26 16:35:35.607 [main] DEBUG net.tanpeng.tanpen.config.listener.ApplicationEventListener - 初始化环境变量
+2017-12-26 16:35:35.704 [main] INFO  net.tanpeng.tanpen.TanpenApplication - Starting TanpenApplication on localhost with PID 16129 (/Users/enterprising/IdeaProjects/tanpen/target/classes started by enterprising in /Users/enterprising/IdeaProjects/tanpen)
+2017-12-26 16:35:35.705 [main] DEBUG net.tanpeng.tanpen.TanpenApplication - Running with Spring Boot v1.5.8.RELEASE, Spring v4.3.12.RELEASE
+2017-12-26 16:35:35.705 [main] INFO  net.tanpeng.tanpen.TanpenApplication - No active profile set, falling back to default profiles: default
+2017-12-26 16:35:35.782 [main] DEBUG net.tanpeng.tanpen.config.listener.ApplicationEventListener - 初始化环境变量完成
+2017-12-26 16:35:35.922 [background-preinit] DEBUG org.jboss.logging - Logging Provider: org.jboss.logging.Slf4jLoggerProvider found via system property
+2017-12-26 16:35:38.270 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2017-12-26 16:35:38.271 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.23
+2017-12-26 16:35:38.367 [localhost-startStop-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2017-12-26 16:35:40.584 [main] DEBUG net.tanpeng.tanpen.config.listener.ApplicationEventListener - 应用刷新
+2017-12-26 16:35:40.595 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2017-12-26 16:35:40.604 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2017-12-26 16:35:40.624 [main] INFO  org.apache.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+2017-12-26 16:35:40.641 [main] DEBUG net.tanpeng.tanpen.config.listener.ApplicationEventListener - 应用已启动完成
+2017-12-26 16:35:40.642 [main] INFO  net.tanpeng.tanpen.TanpenApplication - Started TanpenApplication in 5.836 seconds (JVM running for 6.889)
+2017-12-26 16:35:40.642 [main] DEBUG net.tanpeng.tanpen.TanpenApplication - start success
+2017-12-26 16:36:10.695 [http-nio-8080-exec-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2017-12-26 16:38:17.660 [Thread-17] DEBUG net.tanpeng.tanpen.config.listener.ApplicationEventListener - 应用关闭
+2017-12-26 16:38:21.020 [main] DEBUG net.tanpeng.tanpen.config.listener.ApplicationEventListener - 初始化环境变量
+2017-12-26 16:38:21.132 [main] INFO  net.tanpeng.tanpen.TanpenApplication - Starting TanpenApplication on localhost with PID 16264 (/Users/enterprising/IdeaProjects/tanpen/target/classes started by enterprising in /Users/enterprising/IdeaProjects/tanpen)
+2017-12-26 16:38:21.133 [main] DEBUG net.tanpeng.tanpen.TanpenApplication - Running with Spring Boot v1.5.8.RELEASE, Spring v4.3.12.RELEASE
+2017-12-26 16:38:21.133 [main] INFO  net.tanpeng.tanpen.TanpenApplication - No active profile set, falling back to default profiles: default
+2017-12-26 16:38:21.254 [main] DEBUG net.tanpeng.tanpen.config.listener.ApplicationEventListener - 初始化环境变量完成
+2017-12-26 16:38:21.292 [background-preinit] DEBUG org.jboss.logging - Logging Provider: org.jboss.logging.Slf4jLoggerProvider found via system property
+2017-12-26 16:38:23.241 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2017-12-26 16:38:23.242 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.23
+2017-12-26 16:38:23.353 [localhost-startStop-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2017-12-26 16:38:25.379 [main] DEBUG net.tanpeng.tanpen.config.listener.ApplicationEventListener - 应用刷新
+2017-12-26 16:38:25.394 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2017-12-26 16:38:25.412 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2017-12-26 16:38:25.439 [main] INFO  org.apache.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+2017-12-26 16:38:25.469 [main] DEBUG net.tanpeng.tanpen.config.listener.ApplicationEventListener - 应用已启动完成
+2017-12-26 16:38:25.471 [main] INFO  net.tanpeng.tanpen.TanpenApplication - Started TanpenApplication in 4.654 seconds (JVM running for 5.662)
+2017-12-26 16:38:25.471 [main] DEBUG net.tanpeng.tanpen.TanpenApplication - start success
+2017-12-26 16:38:28.907 [http-nio-8080-exec-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2017-12-26 16:39:18.832 [Thread-14] DEBUG net.tanpeng.tanpen.config.listener.ApplicationEventListener - 应用关闭
+2017-12-26 16:39:22.584 [main] DEBUG net.tanpeng.tanpen.config.listener.ApplicationEventListener - 初始化环境变量
+2017-12-26 16:39:22.682 [main] INFO  net.tanpeng.tanpen.TanpenApplication - Starting TanpenApplication on localhost with PID 16315 (/Users/enterprising/IdeaProjects/tanpen/target/classes started by enterprising in /Users/enterprising/IdeaProjects/tanpen)
+2017-12-26 16:39:22.683 [main] DEBUG net.tanpeng.tanpen.TanpenApplication - Running with Spring Boot v1.5.8.RELEASE, Spring v4.3.12.RELEASE
+2017-12-26 16:39:22.683 [main] INFO  net.tanpeng.tanpen.TanpenApplication - No active profile set, falling back to default profiles: default
+2017-12-26 16:39:22.729 [main] DEBUG net.tanpeng.tanpen.config.listener.ApplicationEventListener - 初始化环境变量完成
+2017-12-26 16:39:23.037 [background-preinit] DEBUG org.jboss.logging - Logging Provider: org.jboss.logging.Slf4jLoggerProvider found via system property
+2017-12-26 16:39:24.431 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2017-12-26 16:39:24.433 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.23
+2017-12-26 16:39:24.519 [localhost-startStop-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2017-12-26 16:39:26.422 [main] DEBUG net.tanpeng.tanpen.config.listener.ApplicationEventListener - 应用刷新
+2017-12-26 16:39:26.438 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2017-12-26 16:39:26.456 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2017-12-26 16:39:26.480 [main] INFO  org.apache.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+2017-12-26 16:39:26.507 [main] DEBUG net.tanpeng.tanpen.config.listener.ApplicationEventListener - 应用已启动完成
+2017-12-26 16:39:26.508 [main] INFO  net.tanpeng.tanpen.TanpenApplication - Started TanpenApplication in 4.123 seconds (JVM running for 5.118)
+2017-12-26 16:39:26.509 [main] DEBUG net.tanpeng.tanpen.TanpenApplication - start success
+2017-12-26 16:39:35.772 [http-nio-8080-exec-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2017-12-26 16:45:09.090 [Thread-12] DEBUG net.tanpeng.tanpen.config.listener.ApplicationEventListener - 应用关闭
+2017-12-26 16:45:13.362 [main] DEBUG net.tanpeng.tanpen.config.listener.ApplicationEventListener - 初始化环境变量
+2017-12-26 16:45:13.617 [main] INFO  net.tanpeng.tanpen.TanpenApplication - Starting TanpenApplication on localhost with PID 16602 (/Users/enterprising/IdeaProjects/tanpen/target/classes started by enterprising in /Users/enterprising/IdeaProjects/tanpen)
+2017-12-26 16:45:13.618 [main] DEBUG net.tanpeng.tanpen.TanpenApplication - Running with Spring Boot v1.5.8.RELEASE, Spring v4.3.12.RELEASE
+2017-12-26 16:45:13.619 [main] INFO  net.tanpeng.tanpen.TanpenApplication - No active profile set, falling back to default profiles: default
+2017-12-26 16:45:13.773 [main] DEBUG net.tanpeng.tanpen.config.listener.ApplicationEventListener - 初始化环境变量完成
+2017-12-26 16:45:13.845 [background-preinit] DEBUG org.jboss.logging - Logging Provider: org.jboss.logging.Slf4jLoggerProvider found via system property
+2017-12-26 16:45:15.539 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2017-12-26 16:45:15.539 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.23
+2017-12-26 16:45:15.626 [localhost-startStop-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2017-12-26 16:45:17.573 [main] DEBUG net.tanpeng.tanpen.config.listener.ApplicationEventListener - 应用刷新
+2017-12-26 16:45:17.586 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2017-12-26 16:45:17.600 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2017-12-26 16:45:17.629 [main] INFO  org.apache.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+2017-12-26 16:45:17.658 [main] DEBUG net.tanpeng.tanpen.config.listener.ApplicationEventListener - 应用已启动完成
+2017-12-26 16:45:17.660 [main] INFO  net.tanpeng.tanpen.TanpenApplication - Started TanpenApplication in 4.474 seconds (JVM running for 5.475)
+2017-12-26 16:45:17.660 [main] DEBUG net.tanpeng.tanpen.TanpenApplication - start success
+2017-12-26 16:45:20.034 [http-nio-8080-exec-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2017-12-26 16:45:37.482 [Thread-13] DEBUG net.tanpeng.tanpen.config.listener.ApplicationEventListener - 应用关闭
+2017-12-26 16:45:40.116 [main] DEBUG net.tanpeng.tanpen.config.listener.ApplicationEventListener - 初始化环境变量
+2017-12-26 16:45:40.205 [main] INFO  net.tanpeng.tanpen.TanpenApplication - Starting TanpenApplication on localhost with PID 16626 (/Users/enterprising/IdeaProjects/tanpen/target/classes started by enterprising in /Users/enterprising/IdeaProjects/tanpen)
+2017-12-26 16:45:40.206 [main] DEBUG net.tanpeng.tanpen.TanpenApplication - Running with Spring Boot v1.5.8.RELEASE, Spring v4.3.12.RELEASE
+2017-12-26 16:45:40.207 [main] INFO  net.tanpeng.tanpen.TanpenApplication - No active profile set, falling back to default profiles: default
+2017-12-26 16:45:40.295 [main] DEBUG net.tanpeng.tanpen.config.listener.ApplicationEventListener - 初始化环境变量完成
+2017-12-26 16:45:40.458 [background-preinit] DEBUG org.jboss.logging - Logging Provider: org.jboss.logging.Slf4jLoggerProvider found via system property
+2017-12-26 16:45:42.028 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2017-12-26 16:45:42.028 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.23
+2017-12-26 16:45:42.114 [localhost-startStop-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2017-12-26 16:45:44.336 [main] DEBUG net.tanpeng.tanpen.config.listener.ApplicationEventListener - 应用刷新
+2017-12-26 16:45:44.345 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2017-12-26 16:45:44.354 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2017-12-26 16:45:44.373 [main] INFO  org.apache.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+2017-12-26 16:45:44.392 [main] DEBUG net.tanpeng.tanpen.config.listener.ApplicationEventListener - 应用已启动完成
+2017-12-26 16:45:44.393 [main] INFO  net.tanpeng.tanpen.TanpenApplication - Started TanpenApplication in 4.486 seconds (JVM running for 5.455)
+2017-12-26 16:45:44.393 [main] DEBUG net.tanpeng.tanpen.TanpenApplication - start success
+2017-12-26 16:45:46.998 [http-nio-8080-exec-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2017-12-26 16:47:57.080 [Thread-13] DEBUG net.tanpeng.tanpen.config.listener.ApplicationEventListener - 应用关闭
+2017-12-26 16:48:01.015 [main] DEBUG net.tanpeng.tanpen.config.listener.ApplicationEventListener - 初始化环境变量
+2017-12-26 16:48:01.176 [main] INFO  net.tanpeng.tanpen.TanpenApplication - Starting TanpenApplication on localhost with PID 16749 (/Users/enterprising/IdeaProjects/tanpen/target/classes started by enterprising in /Users/enterprising/IdeaProjects/tanpen)
+2017-12-26 16:48:01.176 [main] DEBUG net.tanpeng.tanpen.TanpenApplication - Running with Spring Boot v1.5.8.RELEASE, Spring v4.3.12.RELEASE
+2017-12-26 16:48:01.177 [main] INFO  net.tanpeng.tanpen.TanpenApplication - No active profile set, falling back to default profiles: default
+2017-12-26 16:48:01.300 [main] DEBUG net.tanpeng.tanpen.config.listener.ApplicationEventListener - 初始化环境变量完成
+2017-12-26 16:48:01.349 [background-preinit] DEBUG org.jboss.logging - Logging Provider: org.jboss.logging.Slf4jLoggerProvider found via system property
+2017-12-26 16:48:03.407 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2017-12-26 16:48:03.408 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.23
+2017-12-26 16:48:03.489 [localhost-startStop-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2017-12-26 16:48:05.964 [main] DEBUG net.tanpeng.tanpen.config.listener.ApplicationEventListener - 应用刷新
+2017-12-26 16:48:05.974 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2017-12-26 16:48:05.988 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2017-12-26 16:48:06.009 [main] INFO  org.apache.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+2017-12-26 16:48:06.036 [main] DEBUG net.tanpeng.tanpen.config.listener.ApplicationEventListener - 应用已启动完成
+2017-12-26 16:48:06.037 [main] INFO  net.tanpeng.tanpen.TanpenApplication - Started TanpenApplication in 5.218 seconds (JVM running for 6.292)
+2017-12-26 16:48:06.037 [main] DEBUG net.tanpeng.tanpen.TanpenApplication - start success
+2017-12-26 16:48:06.814 [http-nio-8080-exec-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2017-12-26 16:48:55.078 [Thread-14] DEBUG net.tanpeng.tanpen.config.listener.ApplicationEventListener - 应用关闭
+2017-12-26 16:49:05.674 [main] DEBUG net.tanpeng.tanpen.config.listener.ApplicationEventListener - 初始化环境变量
+2017-12-26 16:49:05.883 [main] INFO  net.tanpeng.tanpen.TanpenApplication - Starting TanpenApplication on localhost with PID 16804 (/Users/enterprising/IdeaProjects/tanpen/target/classes started by enterprising in /Users/enterprising/IdeaProjects/tanpen)
+2017-12-26 16:49:05.884 [main] DEBUG net.tanpeng.tanpen.TanpenApplication - Running with Spring Boot v1.5.8.RELEASE, Spring v4.3.12.RELEASE
+2017-12-26 16:49:05.885 [main] INFO  net.tanpeng.tanpen.TanpenApplication - No active profile set, falling back to default profiles: default
+2017-12-26 16:49:06.129 [main] DEBUG net.tanpeng.tanpen.config.listener.ApplicationEventListener - 初始化环境变量完成
+2017-12-26 16:49:06.502 [background-preinit] DEBUG org.jboss.logging - Logging Provider: org.jboss.logging.Slf4jLoggerProvider found via system property
+2017-12-26 16:49:08.180 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2017-12-26 16:49:08.181 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.23
+2017-12-26 16:49:08.291 [localhost-startStop-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2017-12-26 16:49:11.332 [main] DEBUG net.tanpeng.tanpen.config.listener.ApplicationEventListener - 应用刷新
+2017-12-26 16:49:11.341 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2017-12-26 16:49:11.349 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2017-12-26 16:49:11.365 [main] INFO  org.apache.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+2017-12-26 16:49:11.380 [main] DEBUG net.tanpeng.tanpen.config.listener.ApplicationEventListener - 应用已启动完成
+2017-12-26 16:49:11.381 [main] INFO  net.tanpeng.tanpen.TanpenApplication - Started TanpenApplication in 5.878 seconds (JVM running for 7.174)
+2017-12-26 16:49:11.382 [main] DEBUG net.tanpeng.tanpen.TanpenApplication - start success
+2017-12-26 16:49:11.576 [http-nio-8080-exec-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2017-12-26 16:51:41.619 [Thread-16] DEBUG net.tanpeng.tanpen.config.listener.ApplicationEventListener - 应用关闭
+2017-12-26 16:51:45.664 [main] DEBUG net.tanpeng.tanpen.config.listener.ApplicationEventListener - 初始化环境变量
+2017-12-26 16:51:45.764 [main] INFO  net.tanpeng.tanpen.TanpenApplication - Starting TanpenApplication on localhost with PID 16936 (/Users/enterprising/IdeaProjects/tanpen/target/classes started by enterprising in /Users/enterprising/IdeaProjects/tanpen)
+2017-12-26 16:51:45.767 [main] DEBUG net.tanpeng.tanpen.TanpenApplication - Running with Spring Boot v1.5.8.RELEASE, Spring v4.3.12.RELEASE
+2017-12-26 16:51:45.768 [main] INFO  net.tanpeng.tanpen.TanpenApplication - No active profile set, falling back to default profiles: default
+2017-12-26 16:51:45.864 [main] DEBUG net.tanpeng.tanpen.config.listener.ApplicationEventListener - 初始化环境变量完成
+2017-12-26 16:51:46.106 [background-preinit] DEBUG org.jboss.logging - Logging Provider: org.jboss.logging.Slf4jLoggerProvider found via system property
+2017-12-26 16:51:47.856 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2017-12-26 16:51:47.857 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.23
+2017-12-26 16:51:47.939 [localhost-startStop-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2017-12-26 16:51:50.444 [main] DEBUG net.tanpeng.tanpen.config.listener.ApplicationEventListener - 应用刷新
+2017-12-26 16:51:50.459 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2017-12-26 16:51:50.470 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2017-12-26 16:51:50.487 [main] INFO  org.apache.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+2017-12-26 16:51:50.504 [main] DEBUG net.tanpeng.tanpen.config.listener.ApplicationEventListener - 应用已启动完成
+2017-12-26 16:51:50.505 [main] INFO  net.tanpeng.tanpen.TanpenApplication - Started TanpenApplication in 5.034 seconds (JVM running for 6.919)
+2017-12-26 16:51:50.505 [main] DEBUG net.tanpeng.tanpen.TanpenApplication - start success
+2017-12-26 16:51:52.198 [http-nio-8080-exec-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2017-12-26 16:52:06.841 [Thread-16] DEBUG net.tanpeng.tanpen.config.listener.ApplicationEventListener - 应用关闭
+2017-12-26 16:52:10.028 [main] DEBUG net.tanpeng.tanpen.config.listener.ApplicationEventListener - 初始化环境变量
+2017-12-26 16:52:10.130 [main] INFO  net.tanpeng.tanpen.TanpenApplication - Starting TanpenApplication on localhost with PID 16959 (/Users/enterprising/IdeaProjects/tanpen/target/classes started by enterprising in /Users/enterprising/IdeaProjects/tanpen)
+2017-12-26 16:52:10.131 [main] DEBUG net.tanpeng.tanpen.TanpenApplication - Running with Spring Boot v1.5.8.RELEASE, Spring v4.3.12.RELEASE
+2017-12-26 16:52:10.131 [main] INFO  net.tanpeng.tanpen.TanpenApplication - No active profile set, falling back to default profiles: default
+2017-12-26 16:52:10.228 [main] DEBUG net.tanpeng.tanpen.config.listener.ApplicationEventListener - 初始化环境变量完成
+2017-12-26 16:52:10.344 [background-preinit] DEBUG org.jboss.logging - Logging Provider: org.jboss.logging.Slf4jLoggerProvider found via system property
+2017-12-26 16:52:11.995 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2017-12-26 16:52:11.996 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.23
+2017-12-26 16:52:12.080 [localhost-startStop-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2017-12-26 16:52:14.162 [main] DEBUG net.tanpeng.tanpen.config.listener.ApplicationEventListener - 应用刷新
+2017-12-26 16:52:14.189 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2017-12-26 16:52:14.214 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2017-12-26 16:52:14.244 [main] INFO  org.apache.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+2017-12-26 16:52:14.277 [main] DEBUG net.tanpeng.tanpen.config.listener.ApplicationEventListener - 应用已启动完成
+2017-12-26 16:52:14.278 [main] INFO  net.tanpeng.tanpen.TanpenApplication - Started TanpenApplication in 4.4 seconds (JVM running for 5.623)
+2017-12-26 16:52:14.279 [main] DEBUG net.tanpeng.tanpen.TanpenApplication - start success
+2017-12-26 16:52:18.485 [http-nio-8080-exec-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2017-12-26 16:53:18.051 [Thread-13] DEBUG net.tanpeng.tanpen.config.listener.ApplicationEventListener - 应用关闭
+2017-12-26 16:56:48.147 [main] DEBUG net.tanpeng.tanpen.config.listener.ApplicationEventListener - 初始化环境变量
+2017-12-26 16:56:48.287 [main] INFO  net.tanpeng.tanpen.TanpenApplication - Starting TanpenApplication on localhost with PID 17188 (/Users/enterprising/IdeaProjects/tanpen/target/classes started by enterprising in /Users/enterprising/IdeaProjects/tanpen)
+2017-12-26 16:56:48.288 [main] DEBUG net.tanpeng.tanpen.TanpenApplication - Running with Spring Boot v1.5.8.RELEASE, Spring v4.3.12.RELEASE
+2017-12-26 16:56:48.289 [main] INFO  net.tanpeng.tanpen.TanpenApplication - No active profile set, falling back to default profiles: default
+2017-12-26 16:56:48.442 [main] DEBUG net.tanpeng.tanpen.config.listener.ApplicationEventListener - 初始化环境变量完成
+2017-12-26 16:56:48.558 [background-preinit] DEBUG org.jboss.logging - Logging Provider: org.jboss.logging.Slf4jLoggerProvider found via system property
+2017-12-26 16:56:50.397 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2017-12-26 16:56:50.397 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.23
+2017-12-26 16:56:50.480 [localhost-startStop-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2017-12-26 16:56:52.573 [main] DEBUG net.tanpeng.tanpen.config.listener.ApplicationEventListener - 应用刷新
+2017-12-26 16:56:52.589 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2017-12-26 16:56:52.605 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2017-12-26 16:56:52.635 [main] INFO  org.apache.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+2017-12-26 16:56:52.666 [main] DEBUG net.tanpeng.tanpen.config.listener.ApplicationEventListener - 应用已启动完成
+2017-12-26 16:56:52.668 [main] INFO  net.tanpeng.tanpen.TanpenApplication - Started TanpenApplication in 4.788 seconds (JVM running for 5.8)
+2017-12-26 16:56:52.669 [main] DEBUG net.tanpeng.tanpen.TanpenApplication - start success
+2017-12-26 16:56:56.231 [http-nio-8080-exec-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2017-12-26 17:02:49.125 [Thread-15] DEBUG net.tanpeng.tanpen.config.listener.ApplicationEventListener - 应用关闭
+2017-12-26 17:05:34.160 [main] DEBUG net.tanpeng.tanpen.config.listener.ApplicationEventListener - 初始化环境变量
+2017-12-26 17:05:34.321 [main] INFO  net.tanpeng.tanpen.TanpenApplication - Starting TanpenApplication on localhost with PID 17679 (/Users/enterprising/IdeaProjects/tanpen/target/classes started by enterprising in /Users/enterprising/IdeaProjects/tanpen)
+2017-12-26 17:05:34.322 [main] DEBUG net.tanpeng.tanpen.TanpenApplication - Running with Spring Boot v1.5.8.RELEASE, Spring v4.3.12.RELEASE
+2017-12-26 17:05:34.323 [main] INFO  net.tanpeng.tanpen.TanpenApplication - No active profile set, falling back to default profiles: default
+2017-12-26 17:05:34.543 [main] DEBUG net.tanpeng.tanpen.config.listener.ApplicationEventListener - 初始化环境变量完成
+2017-12-26 17:05:34.703 [background-preinit] DEBUG org.jboss.logging - Logging Provider: org.jboss.logging.Slf4jLoggerProvider found via system property
+2017-12-26 17:05:36.163 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2017-12-26 17:05:36.164 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.23
+2017-12-26 17:05:36.260 [localhost-startStop-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2017-12-26 17:05:39.237 [main] DEBUG net.tanpeng.tanpen.config.listener.ApplicationEventListener - 应用刷新
+2017-12-26 17:05:39.248 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2017-12-26 17:05:39.256 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2017-12-26 17:05:39.275 [main] INFO  org.apache.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+2017-12-26 17:05:39.299 [main] DEBUG net.tanpeng.tanpen.config.listener.ApplicationEventListener - 应用已启动完成
+2017-12-26 17:05:39.301 [main] INFO  net.tanpeng.tanpen.TanpenApplication - Started TanpenApplication in 5.334 seconds (JVM running for 6.502)
+2017-12-26 17:05:39.302 [main] DEBUG net.tanpeng.tanpen.TanpenApplication - start success
+2017-12-26 17:05:44.765 [http-nio-8080-exec-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2017-12-26 17:06:34.136 [Thread-15] DEBUG net.tanpeng.tanpen.config.listener.ApplicationEventListener - 应用关闭
+2017-12-26 17:06:37.128 [main] DEBUG net.tanpeng.tanpen.config.listener.ApplicationEventListener - 初始化环境变量
+2017-12-26 17:06:37.277 [main] INFO  net.tanpeng.tanpen.TanpenApplication - Starting TanpenApplication on localhost with PID 17730 (/Users/enterprising/IdeaProjects/tanpen/target/classes started by enterprising in /Users/enterprising/IdeaProjects/tanpen)
+2017-12-26 17:06:37.285 [main] DEBUG net.tanpeng.tanpen.TanpenApplication - Running with Spring Boot v1.5.8.RELEASE, Spring v4.3.12.RELEASE
+2017-12-26 17:06:37.285 [main] INFO  net.tanpeng.tanpen.TanpenApplication - No active profile set, falling back to default profiles: default
+2017-12-26 17:06:37.371 [main] DEBUG net.tanpeng.tanpen.config.listener.ApplicationEventListener - 初始化环境变量完成
+2017-12-26 17:06:37.512 [background-preinit] DEBUG org.jboss.logging - Logging Provider: org.jboss.logging.Slf4jLoggerProvider found via system property
+2017-12-26 17:06:38.958 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2017-12-26 17:06:38.959 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.23
+2017-12-26 17:06:39.045 [localhost-startStop-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2017-12-26 17:06:40.990 [main] DEBUG net.tanpeng.tanpen.config.listener.ApplicationEventListener - 应用刷新
+2017-12-26 17:06:41.004 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2017-12-26 17:06:41.017 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2017-12-26 17:06:41.045 [main] INFO  org.apache.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+2017-12-26 17:06:41.075 [main] DEBUG net.tanpeng.tanpen.config.listener.ApplicationEventListener - 应用已启动完成
+2017-12-26 17:06:41.079 [main] INFO  net.tanpeng.tanpen.TanpenApplication - Started TanpenApplication in 4.163 seconds (JVM running for 5.186)
+2017-12-26 17:06:41.080 [main] DEBUG net.tanpeng.tanpen.TanpenApplication - start success
+2017-12-26 17:06:43.883 [http-nio-8080-exec-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2017-12-26 17:10:29.182 [Thread-14] DEBUG net.tanpeng.tanpen.config.listener.ApplicationEventListener - 应用关闭
+2017-12-26 17:10:32.586 [main] DEBUG net.tanpeng.tanpen.config.listener.ApplicationEventListener - 初始化环境变量
+2017-12-26 17:10:32.670 [main] INFO  net.tanpeng.tanpen.TanpenApplication - Starting TanpenApplication on localhost with PID 17937 (/Users/enterprising/IdeaProjects/tanpen/target/classes started by enterprising in /Users/enterprising/IdeaProjects/tanpen)
+2017-12-26 17:10:32.671 [main] DEBUG net.tanpeng.tanpen.TanpenApplication - Running with Spring Boot v1.5.8.RELEASE, Spring v4.3.12.RELEASE
+2017-12-26 17:10:32.672 [main] INFO  net.tanpeng.tanpen.TanpenApplication - No active profile set, falling back to default profiles: default
+2017-12-26 17:10:32.728 [main] DEBUG net.tanpeng.tanpen.config.listener.ApplicationEventListener - 初始化环境变量完成
+2017-12-26 17:10:32.993 [background-preinit] DEBUG org.jboss.logging - Logging Provider: org.jboss.logging.Slf4jLoggerProvider found via system property
+2017-12-26 17:10:34.410 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2017-12-26 17:10:34.411 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.23
+2017-12-26 17:10:34.516 [localhost-startStop-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2017-12-26 17:10:36.617 [main] DEBUG net.tanpeng.tanpen.config.listener.ApplicationEventListener - 应用刷新
+2017-12-26 17:10:36.636 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2017-12-26 17:10:36.673 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2017-12-26 17:10:36.707 [main] INFO  org.apache.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+2017-12-26 17:10:36.735 [main] DEBUG net.tanpeng.tanpen.config.listener.ApplicationEventListener - 应用已启动完成
+2017-12-26 17:10:36.736 [main] INFO  net.tanpeng.tanpen.TanpenApplication - Started TanpenApplication in 4.439 seconds (JVM running for 5.514)
+2017-12-26 17:10:36.736 [main] DEBUG net.tanpeng.tanpen.TanpenApplication - start success
+2017-12-26 17:10:40.954 [http-nio-8080-exec-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2017-12-26 17:11:03.079 [Thread-13] DEBUG net.tanpeng.tanpen.config.listener.ApplicationEventListener - 应用关闭
+2017-12-26 17:11:17.763 [main] DEBUG net.tanpeng.tanpen.config.listener.ApplicationEventListener - 初始化环境变量
+2017-12-26 17:11:17.843 [main] INFO  net.tanpeng.tanpen.TanpenApplication - Starting TanpenApplication on localhost with PID 17978 (/Users/enterprising/IdeaProjects/tanpen/target/classes started by enterprising in /Users/enterprising/IdeaProjects/tanpen)
+2017-12-26 17:11:17.843 [main] DEBUG net.tanpeng.tanpen.TanpenApplication - Running with Spring Boot v1.5.8.RELEASE, Spring v4.3.12.RELEASE
+2017-12-26 17:11:17.843 [main] INFO  net.tanpeng.tanpen.TanpenApplication - No active profile set, falling back to default profiles: default
+2017-12-26 17:11:17.897 [main] DEBUG net.tanpeng.tanpen.config.listener.ApplicationEventListener - 初始化环境变量完成
+2017-12-26 17:11:18.143 [background-preinit] DEBUG org.jboss.logging - Logging Provider: org.jboss.logging.Slf4jLoggerProvider found via system property
+2017-12-26 17:11:20.354 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2017-12-26 17:11:20.356 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.23
+2017-12-26 17:11:20.457 [localhost-startStop-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2017-12-26 17:11:22.711 [main] DEBUG net.tanpeng.tanpen.config.listener.ApplicationEventListener - 应用刷新
+2017-12-26 17:11:22.722 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2017-12-26 17:11:22.731 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2017-12-26 17:11:22.748 [main] INFO  org.apache.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+2017-12-26 17:11:22.764 [main] DEBUG net.tanpeng.tanpen.config.listener.ApplicationEventListener - 应用已启动完成
+2017-12-26 17:11:22.765 [main] INFO  net.tanpeng.tanpen.TanpenApplication - Started TanpenApplication in 5.207 seconds (JVM running for 6.279)
+2017-12-26 17:11:22.765 [main] DEBUG net.tanpeng.tanpen.TanpenApplication - start success
+2017-12-26 17:11:30.726 [http-nio-8080-exec-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2017-12-26 17:11:56.812 [Thread-15] DEBUG net.tanpeng.tanpen.config.listener.ApplicationEventListener - 应用关闭
+2017-12-26 17:12:12.192 [main] DEBUG net.tanpeng.tanpen.config.listener.ApplicationEventListener - 初始化环境变量
+2017-12-26 17:12:12.455 [main] INFO  net.tanpeng.tanpen.TanpenApplication - Starting TanpenApplication on localhost with PID 18026 (/Users/enterprising/IdeaProjects/tanpen/target/classes started by enterprising in /Users/enterprising/IdeaProjects/tanpen)
+2017-12-26 17:12:12.457 [main] DEBUG net.tanpeng.tanpen.TanpenApplication - Running with Spring Boot v1.5.8.RELEASE, Spring v4.3.12.RELEASE
+2017-12-26 17:12:12.457 [main] INFO  net.tanpeng.tanpen.TanpenApplication - No active profile set, falling back to default profiles: default
+2017-12-26 17:12:12.522 [main] DEBUG net.tanpeng.tanpen.config.listener.ApplicationEventListener - 初始化环境变量完成
+2017-12-26 17:12:12.602 [background-preinit] DEBUG org.jboss.logging - Logging Provider: org.jboss.logging.Slf4jLoggerProvider found via system property
+2017-12-26 17:12:14.084 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2017-12-26 17:12:14.085 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.23
+2017-12-26 17:12:14.249 [localhost-startStop-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2017-12-26 17:12:16.362 [main] DEBUG net.tanpeng.tanpen.config.listener.ApplicationEventListener - 应用刷新
+2017-12-26 17:12:16.385 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2017-12-26 17:12:16.403 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2017-12-26 17:12:16.440 [main] INFO  org.apache.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+2017-12-26 17:12:16.466 [main] DEBUG net.tanpeng.tanpen.config.listener.ApplicationEventListener - 应用已启动完成
+2017-12-26 17:12:16.469 [main] INFO  net.tanpeng.tanpen.TanpenApplication - Started TanpenApplication in 4.442 seconds (JVM running for 5.613)
+2017-12-26 17:12:16.470 [main] DEBUG net.tanpeng.tanpen.TanpenApplication - start success
+2017-12-26 17:12:24.566 [http-nio-8080-exec-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2017-12-26 17:12:40.284 [Thread-14] DEBUG net.tanpeng.tanpen.config.listener.ApplicationEventListener - 应用关闭
+2017-12-26 17:12:52.162 [main] DEBUG net.tanpeng.tanpen.config.listener.ApplicationEventListener - 初始化环境变量
+2017-12-26 17:12:52.321 [main] INFO  net.tanpeng.tanpen.TanpenApplication - Starting TanpenApplication on localhost with PID 18061 (/Users/enterprising/IdeaProjects/tanpen/target/classes started by enterprising in /Users/enterprising/IdeaProjects/tanpen)
+2017-12-26 17:12:52.322 [main] DEBUG net.tanpeng.tanpen.TanpenApplication - Running with Spring Boot v1.5.8.RELEASE, Spring v4.3.12.RELEASE
+2017-12-26 17:12:52.323 [main] INFO  net.tanpeng.tanpen.TanpenApplication - No active profile set, falling back to default profiles: default
+2017-12-26 17:12:52.454 [main] DEBUG net.tanpeng.tanpen.config.listener.ApplicationEventListener - 初始化环境变量完成
+2017-12-26 17:12:52.528 [background-preinit] DEBUG org.jboss.logging - Logging Provider: org.jboss.logging.Slf4jLoggerProvider found via system property
+2017-12-26 17:12:54.149 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2017-12-26 17:12:54.151 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.23
+2017-12-26 17:12:54.257 [localhost-startStop-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2017-12-26 17:12:56.185 [main] DEBUG net.tanpeng.tanpen.config.listener.ApplicationEventListener - 应用刷新
+2017-12-26 17:12:56.198 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2017-12-26 17:12:56.211 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2017-12-26 17:12:56.238 [main] INFO  org.apache.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+2017-12-26 17:12:56.272 [main] DEBUG net.tanpeng.tanpen.config.listener.ApplicationEventListener - 应用已启动完成
+2017-12-26 17:12:56.273 [main] INFO  net.tanpeng.tanpen.TanpenApplication - Started TanpenApplication in 4.267 seconds (JVM running for 5.46)
+2017-12-26 17:12:56.274 [main] DEBUG net.tanpeng.tanpen.TanpenApplication - start success
+2017-12-26 17:12:57.568 [http-nio-8080-exec-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2017-12-26 17:13:05.245 [Thread-13] DEBUG net.tanpeng.tanpen.config.listener.ApplicationEventListener - 应用关闭
+2017-12-26 17:13:11.192 [main] DEBUG net.tanpeng.tanpen.config.listener.ApplicationEventListener - 初始化环境变量
+2017-12-26 17:13:11.399 [main] INFO  net.tanpeng.tanpen.TanpenApplication - Starting TanpenApplication on localhost with PID 18082 (/Users/enterprising/IdeaProjects/tanpen/target/classes started by enterprising in /Users/enterprising/IdeaProjects/tanpen)
+2017-12-26 17:13:11.399 [main] DEBUG net.tanpeng.tanpen.TanpenApplication - Running with Spring Boot v1.5.8.RELEASE, Spring v4.3.12.RELEASE
+2017-12-26 17:13:11.400 [main] INFO  net.tanpeng.tanpen.TanpenApplication - No active profile set, falling back to default profiles: default
+2017-12-26 17:13:11.528 [main] DEBUG net.tanpeng.tanpen.config.listener.ApplicationEventListener - 初始化环境变量完成
+2017-12-26 17:13:11.656 [background-preinit] DEBUG org.jboss.logging - Logging Provider: org.jboss.logging.Slf4jLoggerProvider found via system property
+2017-12-26 17:13:13.559 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2017-12-26 17:13:13.560 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.23
+2017-12-26 17:13:13.639 [localhost-startStop-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2017-12-26 17:13:15.581 [main] DEBUG net.tanpeng.tanpen.config.listener.ApplicationEventListener - 应用刷新
+2017-12-26 17:13:15.593 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2017-12-26 17:13:15.608 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2017-12-26 17:13:15.632 [main] INFO  org.apache.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+2017-12-26 17:13:15.659 [main] DEBUG net.tanpeng.tanpen.config.listener.ApplicationEventListener - 应用已启动完成
+2017-12-26 17:13:15.660 [main] INFO  net.tanpeng.tanpen.TanpenApplication - Started TanpenApplication in 4.796 seconds (JVM running for 5.976)
+2017-12-26 17:13:15.661 [main] DEBUG net.tanpeng.tanpen.TanpenApplication - start success
+2017-12-26 17:13:19.700 [http-nio-8080-exec-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2017-12-26 17:15:26.675 [Thread-15] DEBUG net.tanpeng.tanpen.config.listener.ApplicationEventListener - 应用关闭
+2017-12-26 17:15:33.214 [main] DEBUG net.tanpeng.tanpen.config.listener.ApplicationEventListener - 初始化环境变量
+2017-12-26 17:15:33.296 [main] INFO  net.tanpeng.tanpen.TanpenApplication - Starting TanpenApplication on localhost with PID 18223 (/Users/enterprising/IdeaProjects/tanpen/target/classes started by enterprising in /Users/enterprising/IdeaProjects/tanpen)
+2017-12-26 17:15:33.297 [main] DEBUG net.tanpeng.tanpen.TanpenApplication - Running with Spring Boot v1.5.8.RELEASE, Spring v4.3.12.RELEASE
+2017-12-26 17:15:33.297 [main] INFO  net.tanpeng.tanpen.TanpenApplication - No active profile set, falling back to default profiles: default
+2017-12-26 17:15:33.414 [main] DEBUG net.tanpeng.tanpen.config.listener.ApplicationEventListener - 初始化环境变量完成
+2017-12-26 17:15:33.523 [background-preinit] DEBUG org.jboss.logging - Logging Provider: org.jboss.logging.Slf4jLoggerProvider found via system property
+2017-12-26 17:15:35.041 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2017-12-26 17:15:35.042 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.23
+2017-12-26 17:15:35.120 [localhost-startStop-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2017-12-26 17:15:37.175 [main] DEBUG net.tanpeng.tanpen.config.listener.ApplicationEventListener - 应用刷新
+2017-12-26 17:15:37.191 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2017-12-26 17:15:37.203 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2017-12-26 17:15:37.226 [main] INFO  org.apache.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+2017-12-26 17:15:37.244 [main] DEBUG net.tanpeng.tanpen.config.listener.ApplicationEventListener - 应用已启动完成
+2017-12-26 17:15:37.245 [main] INFO  net.tanpeng.tanpen.TanpenApplication - Started TanpenApplication in 4.255 seconds (JVM running for 5.15)
+2017-12-26 17:15:37.246 [main] DEBUG net.tanpeng.tanpen.TanpenApplication - start success
+2017-12-26 17:15:38.635 [http-nio-8080-exec-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2017-12-26 17:16:02.822 [Thread-13] DEBUG net.tanpeng.tanpen.config.listener.ApplicationEventListener - 应用关闭
+2017-12-26 17:16:08.285 [main] DEBUG net.tanpeng.tanpen.config.listener.ApplicationEventListener - 初始化环境变量
+2017-12-26 17:16:08.422 [main] INFO  net.tanpeng.tanpen.TanpenApplication - Starting TanpenApplication on localhost with PID 18255 (/Users/enterprising/IdeaProjects/tanpen/target/classes started by enterprising in /Users/enterprising/IdeaProjects/tanpen)
+2017-12-26 17:16:08.422 [main] DEBUG net.tanpeng.tanpen.TanpenApplication - Running with Spring Boot v1.5.8.RELEASE, Spring v4.3.12.RELEASE
+2017-12-26 17:16:08.423 [main] INFO  net.tanpeng.tanpen.TanpenApplication - No active profile set, falling back to default profiles: default
+2017-12-26 17:16:08.556 [main] DEBUG net.tanpeng.tanpen.config.listener.ApplicationEventListener - 初始化环境变量完成
+2017-12-26 17:16:08.639 [background-preinit] DEBUG org.jboss.logging - Logging Provider: org.jboss.logging.Slf4jLoggerProvider found via system property
+2017-12-26 17:16:10.104 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2017-12-26 17:16:10.105 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.23
+2017-12-26 17:16:10.187 [localhost-startStop-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2017-12-26 17:16:12.379 [main] DEBUG net.tanpeng.tanpen.config.listener.ApplicationEventListener - 应用刷新
+2017-12-26 17:16:12.393 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2017-12-26 17:16:12.409 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2017-12-26 17:16:12.430 [main] INFO  org.apache.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+2017-12-26 17:16:12.449 [main] DEBUG net.tanpeng.tanpen.config.listener.ApplicationEventListener - 应用已启动完成
+2017-12-26 17:16:12.450 [main] INFO  net.tanpeng.tanpen.TanpenApplication - Started TanpenApplication in 4.412 seconds (JVM running for 5.403)
+2017-12-26 17:16:12.450 [main] DEBUG net.tanpeng.tanpen.TanpenApplication - start success
+2017-12-26 17:27:22.379 [Thread-14] DEBUG net.tanpeng.tanpen.config.listener.ApplicationEventListener - 应用关闭
+2017-12-26 17:27:55.350 [main] DEBUG net.tanpeng.tanpen.config.listener.ApplicationEventListener - 初始化环境变量
+2017-12-26 17:27:55.510 [main] INFO  net.tanpeng.tanpen.TanpenApplication - Starting TanpenApplication on localhost with PID 18826 (/Users/enterprising/IdeaProjects/tanpen/target/classes started by enterprising in /Users/enterprising/IdeaProjects/tanpen)
+2017-12-26 17:27:55.512 [main] DEBUG net.tanpeng.tanpen.TanpenApplication - Running with Spring Boot v1.5.8.RELEASE, Spring v4.3.12.RELEASE
+2017-12-26 17:27:55.516 [main] INFO  net.tanpeng.tanpen.TanpenApplication - No active profile set, falling back to default profiles: default
+2017-12-26 17:27:55.626 [main] DEBUG net.tanpeng.tanpen.config.listener.ApplicationEventListener - 初始化环境变量完成
+2017-12-26 17:27:55.665 [background-preinit] DEBUG org.jboss.logging - Logging Provider: org.jboss.logging.Slf4jLoggerProvider found via system property
+2017-12-26 17:27:57.359 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2017-12-26 17:27:57.360 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.23
+2017-12-26 17:27:57.451 [localhost-startStop-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2017-12-26 17:27:59.389 [main] DEBUG net.tanpeng.tanpen.config.listener.ApplicationEventListener - 应用刷新
+2017-12-26 17:27:59.405 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2017-12-26 17:27:59.421 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2017-12-26 17:27:59.457 [main] INFO  org.apache.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+2017-12-26 17:27:59.543 [main] DEBUG net.tanpeng.tanpen.config.listener.ApplicationEventListener - 应用已启动完成
+2017-12-26 17:27:59.546 [main] INFO  net.tanpeng.tanpen.TanpenApplication - Started TanpenApplication in 4.416 seconds (JVM running for 5.374)
+2017-12-26 17:27:59.547 [main] DEBUG net.tanpeng.tanpen.TanpenApplication - start success
+2017-12-26 17:28:43.471 [http-nio-8080-exec-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2017-12-26 17:34:43.353 [Thread-14] DEBUG net.tanpeng.tanpen.config.listener.ApplicationEventListener - 应用关闭
+2017-12-26 17:34:48.555 [main] DEBUG net.tanpeng.tanpen.config.listener.ApplicationEventListener - 初始化环境变量
+2017-12-26 17:34:48.735 [main] INFO  net.tanpeng.tanpen.TanpenApplication - Starting TanpenApplication on localhost with PID 19184 (/Users/enterprising/IdeaProjects/tanpen/target/classes started by enterprising in /Users/enterprising/IdeaProjects/tanpen)
+2017-12-26 17:34:48.737 [main] DEBUG net.tanpeng.tanpen.TanpenApplication - Running with Spring Boot v1.5.8.RELEASE, Spring v4.3.12.RELEASE
+2017-12-26 17:34:48.738 [main] INFO  net.tanpeng.tanpen.TanpenApplication - No active profile set, falling back to default profiles: default
+2017-12-26 17:34:49.018 [main] DEBUG net.tanpeng.tanpen.config.listener.ApplicationEventListener - 初始化环境变量完成
+2017-12-26 17:34:49.099 [background-preinit] DEBUG org.jboss.logging - Logging Provider: org.jboss.logging.Slf4jLoggerProvider found via system property
+2017-12-26 17:34:50.837 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2017-12-26 17:34:50.837 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.23
+2017-12-26 17:34:51.007 [localhost-startStop-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2017-12-26 17:34:54.131 [main] DEBUG net.tanpeng.tanpen.config.listener.ApplicationEventListener - 应用刷新
+2017-12-26 17:34:54.144 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2017-12-26 17:34:54.156 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2017-12-26 17:34:54.176 [main] INFO  org.apache.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+2017-12-26 17:34:54.203 [main] DEBUG net.tanpeng.tanpen.config.listener.ApplicationEventListener - 应用已启动完成
+2017-12-26 17:34:54.204 [main] INFO  net.tanpeng.tanpen.TanpenApplication - Started TanpenApplication in 5.989 seconds (JVM running for 7.223)
+2017-12-26 17:34:54.204 [main] DEBUG net.tanpeng.tanpen.TanpenApplication - start success
+2017-12-26 17:34:55.585 [http-nio-8080-exec-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2017-12-26 17:37:47.675 [Thread-16] DEBUG net.tanpeng.tanpen.config.listener.ApplicationEventListener - 应用关闭
+2017-12-26 17:37:53.534 [main] DEBUG net.tanpeng.tanpen.config.listener.ApplicationEventListener - 初始化环境变量
+2017-12-26 17:37:53.722 [main] INFO  net.tanpeng.tanpen.Application - Starting Application on localhost with PID 19342 (/Users/enterprising/IdeaProjects/tanpen/target/classes started by enterprising in /Users/enterprising/IdeaProjects/tanpen)
+2017-12-26 17:37:53.722 [main] DEBUG net.tanpeng.tanpen.Application - Running with Spring Boot v1.5.8.RELEASE, Spring v4.3.12.RELEASE
+2017-12-26 17:37:53.723 [main] INFO  net.tanpeng.tanpen.Application - No active profile set, falling back to default profiles: default
+2017-12-26 17:37:53.799 [main] DEBUG net.tanpeng.tanpen.config.listener.ApplicationEventListener - 初始化环境变量完成
+2017-12-26 17:37:54.013 [background-preinit] DEBUG org.jboss.logging - Logging Provider: org.jboss.logging.Slf4jLoggerProvider found via system property
+2017-12-26 17:37:55.348 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2017-12-26 17:37:55.349 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.23
+2017-12-26 17:37:55.429 [localhost-startStop-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2017-12-26 17:37:57.366 [main] DEBUG net.tanpeng.tanpen.config.listener.ApplicationEventListener - 应用刷新
+2017-12-26 17:37:57.383 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2017-12-26 17:37:57.402 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2017-12-26 17:37:57.431 [main] INFO  org.apache.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+2017-12-26 17:37:57.461 [main] DEBUG net.tanpeng.tanpen.config.listener.ApplicationEventListener - 应用已启动完成
+2017-12-26 17:37:57.462 [main] INFO  net.tanpeng.tanpen.Application - Started Application in 4.113 seconds (JVM running for 5.161)
+2017-12-26 17:37:57.463 [main] DEBUG net.tanpeng.tanpen.Application - start success
+2017-12-26 17:38:01.341 [http-nio-8080-exec-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2017-12-26 17:39:33.005 [Thread-14] DEBUG net.tanpeng.tanpen.config.listener.ApplicationEventListener - 应用关闭
+2017-12-26 17:39:53.146 [main] DEBUG net.tanpeng.tanpen.config.listener.ApplicationEventListener - 初始化环境变量
+2017-12-26 17:39:53.279 [main] INFO  net.tanpeng.tanpen.Application - Starting Application on localhost with PID 19442 (/Users/enterprising/IdeaProjects/tanpen/target/classes started by enterprising in /Users/enterprising/IdeaProjects/tanpen)
+2017-12-26 17:39:53.280 [main] DEBUG net.tanpeng.tanpen.Application - Running with Spring Boot v1.5.8.RELEASE, Spring v4.3.12.RELEASE
+2017-12-26 17:39:53.280 [main] INFO  net.tanpeng.tanpen.Application - No active profile set, falling back to default profiles: default
+2017-12-26 17:39:53.344 [main] DEBUG net.tanpeng.tanpen.config.listener.ApplicationEventListener - 初始化环境变量完成
+2017-12-26 17:39:53.469 [background-preinit] DEBUG org.jboss.logging - Logging Provider: org.jboss.logging.Slf4jLoggerProvider found via system property
+2017-12-26 17:39:55.148 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2017-12-26 17:39:55.150 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.23
+2017-12-26 17:39:55.272 [localhost-startStop-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2017-12-26 17:39:57.602 [main] DEBUG net.tanpeng.tanpen.config.listener.ApplicationEventListener - 应用刷新
+2017-12-26 17:39:57.610 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2017-12-26 17:39:57.619 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2017-12-26 17:39:57.636 [main] INFO  org.apache.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+2017-12-26 17:39:57.652 [main] DEBUG net.tanpeng.tanpen.config.listener.ApplicationEventListener - 应用已启动完成
+2017-12-26 17:39:57.653 [main] INFO  net.tanpeng.tanpen.Application - Started Application in 4.724 seconds (JVM running for 5.667)
+2017-12-26 17:39:57.653 [main] DEBUG net.tanpeng.tanpen.Application - start success
+2017-12-26 17:39:59.230 [http-nio-8080-exec-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2017-12-26 19:25:52.004 [Thread-14] DEBUG net.tanpeng.tanpen.config.listener.ApplicationEventListener - 应用关闭
+2017-12-26 19:26:01.186 [main] DEBUG net.tanpeng.tanpen.config.listener.ApplicationEventListener - 初始化环境变量
+2017-12-26 19:26:01.312 [main] INFO  net.tanpeng.tanpen.Application - Starting Application on localhost with PID 19861 (/Users/enterprising/IdeaProjects/tanpen/target/classes started by enterprising in /Users/enterprising/IdeaProjects/tanpen)
+2017-12-26 19:26:01.319 [main] DEBUG net.tanpeng.tanpen.Application - Running with Spring Boot v1.5.8.RELEASE, Spring v4.3.12.RELEASE
+2017-12-26 19:26:01.319 [main] INFO  net.tanpeng.tanpen.Application - No active profile set, falling back to default profiles: default
+2017-12-26 19:26:01.514 [main] DEBUG net.tanpeng.tanpen.config.listener.ApplicationEventListener - 初始化环境变量完成
+2017-12-26 19:26:01.528 [background-preinit] DEBUG org.jboss.logging - Logging Provider: org.jboss.logging.Slf4jLoggerProvider found via system property
+2017-12-26 19:26:03.732 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2017-12-26 19:26:03.733 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.23
+2017-12-26 19:26:03.822 [localhost-startStop-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2017-12-26 19:26:06.330 [main] DEBUG net.tanpeng.tanpen.config.listener.ApplicationEventListener - 应用刷新
+2017-12-26 19:26:06.340 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2017-12-26 19:26:06.350 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2017-12-26 19:26:06.368 [main] INFO  org.apache.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+2017-12-26 19:26:06.389 [main] DEBUG net.tanpeng.tanpen.config.listener.ApplicationEventListener - 应用已启动完成
+2017-12-26 19:26:06.390 [main] INFO  net.tanpeng.tanpen.Application - Started Application in 5.36 seconds (JVM running for 6.508)
+2017-12-26 19:26:06.390 [main] DEBUG net.tanpeng.tanpen.Application - start success
+2017-12-26 19:26:10.471 [http-nio-8080-exec-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2017-12-26 19:27:48.025 [Thread-16] DEBUG net.tanpeng.tanpen.config.listener.ApplicationEventListener - 应用关闭
+2017-12-26 19:28:00.857 [main] DEBUG net.tanpeng.tanpen.config.listener.ApplicationEventListener - 初始化环境变量
+2017-12-26 19:28:01.062 [main] INFO  net.tanpeng.tanpen.Application - Starting Application on localhost with PID 19961 (/Users/enterprising/IdeaProjects/tanpen/target/classes started by enterprising in /Users/enterprising/IdeaProjects/tanpen)
+2017-12-26 19:28:01.063 [main] DEBUG net.tanpeng.tanpen.Application - Running with Spring Boot v1.4.2.RELEASE, Spring v4.3.4.RELEASE
+2017-12-26 19:28:01.063 [main] INFO  net.tanpeng.tanpen.Application - No active profile set, falling back to default profiles: default
+2017-12-26 19:28:01.185 [main] DEBUG net.tanpeng.tanpen.config.listener.ApplicationEventListener - 初始化环境变量完成
+2017-12-26 19:28:01.245 [background-preinit] DEBUG org.jboss.logging - Logging Provider: org.jboss.logging.Slf4jLoggerProvider found via system property
+2017-12-26 19:28:03.058 [main] INFO  org.apache.catalina.core.StandardService - Starting service Tomcat
+2017-12-26 19:28:03.059 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.6
+2017-12-26 19:28:03.162 [localhost-startStop-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2017-12-26 19:28:03.356 [main] WARN  org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'org.springframework.boot.autoconfigure.orm.jpa.HibernateJpaAutoConfiguration': Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Tomcat.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.tomcat.jdbc.pool.DataSource]: Factory method 'dataSource' threw exception; nested exception is java.lang.IllegalStateException: Cannot load driver class: com.mysql.jdbc.Driver
+2017-12-26 19:28:03.358 [main] INFO  org.apache.catalina.core.StandardService - Stopping service Tomcat
+2017-12-26 19:28:03.375 [main] ERROR org.springframework.boot.SpringApplication - Application startup failed
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'org.springframework.boot.autoconfigure.orm.jpa.HibernateJpaAutoConfiguration': Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Tomcat.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.tomcat.jdbc.pool.DataSource]: Factory method 'dataSource' threw exception; nested exception is java.lang.IllegalStateException: Cannot load driver class: com.mysql.jdbc.Driver
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:749)
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:189)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1148)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1050)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:512)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:482)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:197)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:372)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1128)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1022)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:512)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:482)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:197)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1081)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:856)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:542)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.refresh(EmbeddedWebApplicationContext.java:122)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:761)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:371)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1186)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1175)
+	at net.tanpeng.tanpen.Application.main(Application.java:12)
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Tomcat.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.tomcat.jdbc.pool.DataSource]: Factory method 'dataSource' threw exception; nested exception is java.lang.IllegalStateException: Cannot load driver class: com.mysql.jdbc.Driver
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:599)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1128)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1022)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:512)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:482)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:207)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1131)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1059)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:835)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:741)
+	... 28 common frames omitted
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.tomcat.jdbc.pool.DataSource]: Factory method 'dataSource' threw exception; nested exception is java.lang.IllegalStateException: Cannot load driver class: com.mysql.jdbc.Driver
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:189)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:588)
+	... 41 common frames omitted
+Caused by: java.lang.IllegalStateException: Cannot load driver class: com.mysql.jdbc.Driver
+	at org.springframework.util.Assert.state(Assert.java:392)
+	at org.springframework.boot.autoconfigure.jdbc.DataSourceProperties.determineDriverClassName(DataSourceProperties.java:230)
+	at org.springframework.boot.autoconfigure.jdbc.DataSourceProperties.initializeDataSourceBuilder(DataSourceProperties.java:182)
+	at org.springframework.boot.autoconfigure.jdbc.DataSourceConfiguration.createDataSource(DataSourceConfiguration.java:42)
+	at org.springframework.boot.autoconfigure.jdbc.DataSourceConfiguration$Tomcat.dataSource(DataSourceConfiguration.java:53)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:162)
+	... 42 common frames omitted
+2017-12-26 19:29:27.014 [main] DEBUG net.tanpeng.tanpen.config.listener.ApplicationEventListener - 初始化环境变量
+2017-12-26 19:29:27.203 [main] INFO  net.tanpeng.tanpen.Application - Starting Application on localhost with PID 20039 (/Users/enterprising/IdeaProjects/tanpen/target/classes started by enterprising in /Users/enterprising/IdeaProjects/tanpen)
+2017-12-26 19:29:27.204 [main] DEBUG net.tanpeng.tanpen.Application - Running with Spring Boot v1.4.2.RELEASE, Spring v4.3.4.RELEASE
+2017-12-26 19:29:27.205 [main] INFO  net.tanpeng.tanpen.Application - No active profile set, falling back to default profiles: default
+2017-12-26 19:29:27.306 [main] DEBUG net.tanpeng.tanpen.config.listener.ApplicationEventListener - 初始化环境变量完成
+2017-12-26 19:29:27.317 [background-preinit] DEBUG org.jboss.logging - Logging Provider: org.jboss.logging.Slf4jLoggerProvider found via system property
+2017-12-26 19:29:28.981 [main] INFO  org.apache.catalina.core.StandardService - Starting service Tomcat
+2017-12-26 19:29:28.982 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.6
+2017-12-26 19:29:29.067 [localhost-startStop-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2017-12-26 19:29:31.375 [main] DEBUG net.tanpeng.tanpen.config.listener.ApplicationEventListener - 应用刷新
+2017-12-26 19:29:31.392 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2017-12-26 19:29:31.406 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler [http-nio-8080]
+2017-12-26 19:29:31.433 [main] INFO  org.apache.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+2017-12-26 19:29:31.452 [main] DEBUG net.tanpeng.tanpen.config.listener.ApplicationEventListener - 应用已启动完成
+2017-12-26 19:29:31.453 [main] INFO  net.tanpeng.tanpen.Application - Started Application in 4.661 seconds (JVM running for 5.929)
+2017-12-26 19:29:31.453 [main] DEBUG net.tanpeng.tanpen.Application - start success
+2017-12-26 19:29:37.336 [http-nio-8080-exec-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2017-12-26 19:31:45.550 [Thread-13] DEBUG net.tanpeng.tanpen.config.listener.ApplicationEventListener - 应用关闭
+2017-12-26 19:37:24.389 [main] DEBUG net.tanpeng.tanpen.config.listener.ApplicationEventListener - 初始化环境变量
+2017-12-26 19:37:24.584 [main] INFO  net.tanpeng.tanpen.Application - Starting Application on localhost with PID 20439 (/Users/enterprising/IdeaProjects/tanpen/target/classes started by enterprising in /Users/enterprising/IdeaProjects/tanpen)
+2017-12-26 19:37:24.585 [main] DEBUG net.tanpeng.tanpen.Application - Running with Spring Boot v1.4.2.RELEASE, Spring v4.3.4.RELEASE
+2017-12-26 19:37:24.585 [main] INFO  net.tanpeng.tanpen.Application - No active profile set, falling back to default profiles: default
+2017-12-26 19:37:24.753 [main] DEBUG net.tanpeng.tanpen.config.listener.ApplicationEventListener - 初始化环境变量完成
+2017-12-26 19:37:24.876 [background-preinit] DEBUG org.jboss.logging - Logging Provider: org.jboss.logging.Slf4jLoggerProvider found via system property
+2017-12-26 19:37:27.191 [main] INFO  org.apache.catalina.core.StandardService - Starting service Tomcat
+2017-12-26 19:37:27.192 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.6
+2017-12-26 19:37:27.295 [localhost-startStop-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2017-12-26 19:37:30.057 [main] DEBUG net.tanpeng.tanpen.config.listener.ApplicationEventListener - 应用刷新
+2017-12-26 19:37:30.074 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2017-12-26 19:37:30.094 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler [http-nio-8080]
+2017-12-26 19:37:30.122 [main] INFO  org.apache.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+2017-12-26 19:37:30.150 [main] DEBUG net.tanpeng.tanpen.config.listener.ApplicationEventListener - 应用已启动完成
+2017-12-26 19:37:30.151 [main] INFO  net.tanpeng.tanpen.Application - Started Application in 6.308 seconds (JVM running for 8.373)
+2017-12-26 19:37:30.151 [main] DEBUG net.tanpeng.tanpen.Application - start success
+2017-12-26 19:37:31.181 [http-nio-8080-exec-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2017-12-26 19:39:22.523 [Thread-18] DEBUG net.tanpeng.tanpen.config.listener.ApplicationEventListener - 应用关闭
+2017-12-26 19:39:27.372 [main] DEBUG net.tanpeng.tanpen.config.listener.ApplicationEventListener - 初始化环境变量
+2017-12-26 19:39:27.856 [main] INFO  net.tanpeng.tanpen.Application - Starting Application on localhost with PID 20539 (/Users/enterprising/IdeaProjects/tanpen/target/classes started by enterprising in /Users/enterprising/IdeaProjects/tanpen)
+2017-12-26 19:39:27.863 [main] DEBUG net.tanpeng.tanpen.Application - Running with Spring Boot v1.4.2.RELEASE, Spring v4.3.4.RELEASE
+2017-12-26 19:39:27.864 [main] INFO  net.tanpeng.tanpen.Application - No active profile set, falling back to default profiles: default
+2017-12-26 19:39:28.062 [main] DEBUG net.tanpeng.tanpen.config.listener.ApplicationEventListener - 初始化环境变量完成
+2017-12-26 19:39:28.254 [background-preinit] DEBUG org.jboss.logging - Logging Provider: org.jboss.logging.Slf4jLoggerProvider found via system property
+2017-12-26 19:39:30.779 [main] INFO  org.apache.catalina.core.StandardService - Starting service Tomcat
+2017-12-26 19:39:30.784 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.6
+2017-12-26 19:39:30.885 [localhost-startStop-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2017-12-26 19:39:32.933 [main] DEBUG net.tanpeng.tanpen.config.listener.ApplicationEventListener - 应用刷新
+2017-12-26 19:39:32.944 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2017-12-26 19:39:32.953 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler [http-nio-8080]
+2017-12-26 19:39:32.972 [main] INFO  org.apache.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+2017-12-26 19:39:32.989 [main] DEBUG net.tanpeng.tanpen.config.listener.ApplicationEventListener - 应用已启动完成
+2017-12-26 19:39:32.990 [main] INFO  net.tanpeng.tanpen.Application - Started Application in 5.917 seconds (JVM running for 7.63)
+2017-12-26 19:39:32.990 [main] DEBUG net.tanpeng.tanpen.Application - start success
+2017-12-26 19:39:33.483 [http-nio-8080-exec-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2017-12-26 19:41:57.445 [Thread-15] DEBUG net.tanpeng.tanpen.config.listener.ApplicationEventListener - 应用关闭
+2017-12-26 19:42:01.576 [main] DEBUG net.tanpeng.tanpen.config.listener.ApplicationEventListener - 初始化环境变量
+2017-12-26 19:42:01.713 [main] INFO  net.tanpeng.tanpen.Application - Starting Application on localhost with PID 20666 (/Users/enterprising/IdeaProjects/tanpen/target/classes started by enterprising in /Users/enterprising/IdeaProjects/tanpen)
+2017-12-26 19:42:01.714 [main] DEBUG net.tanpeng.tanpen.Application - Running with Spring Boot v1.4.2.RELEASE, Spring v4.3.4.RELEASE
+2017-12-26 19:42:01.714 [main] INFO  net.tanpeng.tanpen.Application - No active profile set, falling back to default profiles: default
+2017-12-26 19:42:01.820 [background-preinit] DEBUG org.jboss.logging - Logging Provider: org.jboss.logging.Slf4jLoggerProvider found via system property
+2017-12-26 19:42:01.826 [main] DEBUG net.tanpeng.tanpen.config.listener.ApplicationEventListener - 初始化环境变量完成
+2017-12-26 19:42:04.736 [main] INFO  org.apache.catalina.core.StandardService - Starting service Tomcat
+2017-12-26 19:42:04.739 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.6
+2017-12-26 19:42:04.845 [localhost-startStop-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2017-12-26 19:42:08.151 [main] DEBUG net.tanpeng.tanpen.config.listener.ApplicationEventListener - 应用刷新
+2017-12-26 19:42:08.167 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2017-12-26 19:42:08.183 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler [http-nio-8080]
+2017-12-26 19:42:08.209 [main] INFO  org.apache.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+2017-12-26 19:42:08.235 [main] DEBUG net.tanpeng.tanpen.config.listener.ApplicationEventListener - 应用已启动完成
+2017-12-26 19:42:08.236 [main] INFO  net.tanpeng.tanpen.Application - Started Application in 6.883 seconds (JVM running for 8.721)
+2017-12-26 19:42:08.236 [main] DEBUG net.tanpeng.tanpen.Application - start success
+2017-12-26 19:42:08.817 [http-nio-8080-exec-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2017-12-26 19:42:32.383 [Thread-17] DEBUG net.tanpeng.tanpen.config.listener.ApplicationEventListener - 应用关闭
+2017-12-26 19:42:35.117 [main] DEBUG net.tanpeng.tanpen.config.listener.ApplicationEventListener - 初始化环境变量
+2017-12-26 19:42:35.257 [main] INFO  net.tanpeng.tanpen.Application - Starting Application on localhost with PID 20697 (/Users/enterprising/IdeaProjects/tanpen/target/classes started by enterprising in /Users/enterprising/IdeaProjects/tanpen)
+2017-12-26 19:42:35.258 [main] DEBUG net.tanpeng.tanpen.Application - Running with Spring Boot v1.4.2.RELEASE, Spring v4.3.4.RELEASE
+2017-12-26 19:42:35.260 [main] INFO  net.tanpeng.tanpen.Application - No active profile set, falling back to default profiles: default
+2017-12-26 19:42:35.369 [main] DEBUG net.tanpeng.tanpen.config.listener.ApplicationEventListener - 初始化环境变量完成
+2017-12-26 19:42:35.446 [background-preinit] DEBUG org.jboss.logging - Logging Provider: org.jboss.logging.Slf4jLoggerProvider found via system property
+2017-12-26 19:42:37.309 [main] INFO  org.apache.catalina.core.StandardService - Starting service Tomcat
+2017-12-26 19:42:37.310 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.6
+2017-12-26 19:42:37.374 [localhost-startStop-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2017-12-26 19:42:39.273 [main] DEBUG net.tanpeng.tanpen.config.listener.ApplicationEventListener - 应用刷新
+2017-12-26 19:42:39.288 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2017-12-26 19:42:39.300 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler [http-nio-8080]
+2017-12-26 19:42:39.325 [main] INFO  org.apache.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+2017-12-26 19:42:39.349 [main] DEBUG net.tanpeng.tanpen.config.listener.ApplicationEventListener - 应用已启动完成
+2017-12-26 19:42:39.351 [main] INFO  net.tanpeng.tanpen.Application - Started Application in 4.433 seconds (JVM running for 5.709)
+2017-12-26 19:42:39.351 [main] DEBUG net.tanpeng.tanpen.Application - start success
+2017-12-26 19:43:08.226 [http-nio-8080-exec-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2017-12-26 19:46:39.719 [Thread-13] DEBUG net.tanpeng.tanpen.config.listener.ApplicationEventListener - 应用关闭
+2017-12-26 19:46:42.548 [main] DEBUG net.tanpeng.tanpen.config.listener.ApplicationEventListener - 初始化环境变量
+2017-12-26 19:46:42.631 [main] INFO  net.tanpeng.tanpen.Application - Starting Application on localhost with PID 20900 (/Users/enterprising/IdeaProjects/tanpen/target/classes started by enterprising in /Users/enterprising/IdeaProjects/tanpen)
+2017-12-26 19:46:42.632 [main] DEBUG net.tanpeng.tanpen.Application - Running with Spring Boot v1.4.2.RELEASE, Spring v4.3.4.RELEASE
+2017-12-26 19:46:42.632 [main] INFO  net.tanpeng.tanpen.Application - No active profile set, falling back to default profiles: default
+2017-12-26 19:46:42.743 [main] DEBUG net.tanpeng.tanpen.config.listener.ApplicationEventListener - 初始化环境变量完成
+2017-12-26 19:46:42.865 [background-preinit] DEBUG org.jboss.logging - Logging Provider: org.jboss.logging.Slf4jLoggerProvider found via system property
+2017-12-26 19:46:44.519 [main] INFO  org.apache.catalina.core.StandardService - Starting service Tomcat
+2017-12-26 19:46:44.520 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.6
+2017-12-26 19:46:44.596 [localhost-startStop-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2017-12-26 19:46:46.802 [main] DEBUG net.tanpeng.tanpen.config.listener.ApplicationEventListener - 应用刷新
+2017-12-26 19:46:46.819 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2017-12-26 19:46:46.836 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler [http-nio-8080]
+2017-12-26 19:46:46.861 [main] INFO  org.apache.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+2017-12-26 19:46:46.887 [main] DEBUG net.tanpeng.tanpen.config.listener.ApplicationEventListener - 应用已启动完成
+2017-12-26 19:46:46.889 [main] INFO  net.tanpeng.tanpen.Application - Started Application in 4.581 seconds (JVM running for 5.955)
+2017-12-26 19:46:46.889 [main] DEBUG net.tanpeng.tanpen.Application - start success
+2017-12-26 19:46:51.880 [http-nio-8080-exec-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2017-12-26 19:49:36.042 [Thread-13] DEBUG net.tanpeng.tanpen.config.listener.ApplicationEventListener - 应用关闭
+2017-12-26 19:49:38.685 [main] DEBUG net.tanpeng.tanpen.config.listener.ApplicationEventListener - 初始化环境变量
+2017-12-26 19:49:38.803 [main] INFO  net.tanpeng.tanpen.Application - Starting Application on localhost with PID 21044 (/Users/enterprising/IdeaProjects/tanpen/target/classes started by enterprising in /Users/enterprising/IdeaProjects/tanpen)
+2017-12-26 19:49:38.804 [main] DEBUG net.tanpeng.tanpen.Application - Running with Spring Boot v1.4.2.RELEASE, Spring v4.3.4.RELEASE
+2017-12-26 19:49:38.804 [main] INFO  net.tanpeng.tanpen.Application - No active profile set, falling back to default profiles: default
+2017-12-26 19:49:38.939 [main] DEBUG net.tanpeng.tanpen.config.listener.ApplicationEventListener - 初始化环境变量完成
+2017-12-26 19:49:38.997 [background-preinit] DEBUG org.jboss.logging - Logging Provider: org.jboss.logging.Slf4jLoggerProvider found via system property
+2017-12-26 19:49:41.367 [main] INFO  org.apache.catalina.core.StandardService - Starting service Tomcat
+2017-12-26 19:49:41.368 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.6
+2017-12-26 19:49:41.446 [localhost-startStop-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2017-12-26 19:49:43.601 [main] DEBUG net.tanpeng.tanpen.config.listener.ApplicationEventListener - 应用刷新
+2017-12-26 19:49:43.613 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2017-12-26 19:49:43.625 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler [http-nio-8080]
+2017-12-26 19:49:43.646 [main] INFO  org.apache.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+2017-12-26 19:49:43.671 [main] DEBUG net.tanpeng.tanpen.config.listener.ApplicationEventListener - 应用已启动完成
+2017-12-26 19:49:43.672 [main] INFO  net.tanpeng.tanpen.Application - Started Application in 5.207 seconds (JVM running for 6.391)
+2017-12-26 19:49:43.672 [main] DEBUG net.tanpeng.tanpen.Application - start success
+2017-12-26 19:49:46.252 [http-nio-8080-exec-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2017-12-26 19:50:33.848 [Thread-14] DEBUG net.tanpeng.tanpen.config.listener.ApplicationEventListener - 应用关闭
+2017-12-26 19:50:37.995 [main] DEBUG net.tanpeng.tanpen.config.listener.ApplicationEventListener - 初始化环境变量
+2017-12-26 19:50:38.280 [main] INFO  net.tanpeng.tanpen.Application - Starting Application on localhost with PID 21096 (/Users/enterprising/IdeaProjects/tanpen/target/classes started by enterprising in /Users/enterprising/IdeaProjects/tanpen)
+2017-12-26 19:50:38.282 [main] DEBUG net.tanpeng.tanpen.Application - Running with Spring Boot v1.4.2.RELEASE, Spring v4.3.4.RELEASE
+2017-12-26 19:50:38.284 [main] INFO  net.tanpeng.tanpen.Application - No active profile set, falling back to default profiles: default
+2017-12-26 19:50:38.560 [main] DEBUG net.tanpeng.tanpen.config.listener.ApplicationEventListener - 初始化环境变量完成
+2017-12-26 19:50:38.670 [background-preinit] DEBUG org.jboss.logging - Logging Provider: org.jboss.logging.Slf4jLoggerProvider found via system property
+2017-12-26 19:50:41.188 [main] INFO  org.apache.catalina.core.StandardService - Starting service Tomcat
+2017-12-26 19:50:41.189 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.6
+2017-12-26 19:50:41.275 [localhost-startStop-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2017-12-26 19:50:43.340 [main] DEBUG net.tanpeng.tanpen.config.listener.ApplicationEventListener - 应用刷新
+2017-12-26 19:50:43.349 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2017-12-26 19:50:43.358 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler [http-nio-8080]
+2017-12-26 19:50:43.375 [main] INFO  org.apache.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+2017-12-26 19:50:43.390 [main] DEBUG net.tanpeng.tanpen.config.listener.ApplicationEventListener - 应用已启动完成
+2017-12-26 19:50:43.391 [main] INFO  net.tanpeng.tanpen.Application - Started Application in 5.692 seconds (JVM running for 6.797)
+2017-12-26 19:50:43.391 [main] DEBUG net.tanpeng.tanpen.Application - start success
+2017-12-26 19:51:03.464 [http-nio-8080-exec-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2017-12-26 19:51:26.140 [Thread-15] DEBUG net.tanpeng.tanpen.config.listener.ApplicationEventListener - 应用关闭
+2017-12-26 19:51:30.818 [main] DEBUG net.tanpeng.tanpen.config.listener.ApplicationEventListener - 初始化环境变量
+2017-12-26 19:51:30.997 [main] INFO  net.tanpeng.tanpen.Application - Starting Application on localhost with PID 21143 (/Users/enterprising/IdeaProjects/tanpen/target/classes started by enterprising in /Users/enterprising/IdeaProjects/tanpen)
+2017-12-26 19:51:30.998 [main] DEBUG net.tanpeng.tanpen.Application - Running with Spring Boot v1.4.2.RELEASE, Spring v4.3.4.RELEASE
+2017-12-26 19:51:30.999 [main] INFO  net.tanpeng.tanpen.Application - No active profile set, falling back to default profiles: default
+2017-12-26 19:51:31.095 [main] DEBUG net.tanpeng.tanpen.config.listener.ApplicationEventListener - 初始化环境变量完成
+2017-12-26 19:51:31.160 [background-preinit] DEBUG org.jboss.logging - Logging Provider: org.jboss.logging.Slf4jLoggerProvider found via system property
+2017-12-26 19:51:32.896 [main] INFO  org.apache.catalina.core.StandardService - Starting service Tomcat
+2017-12-26 19:51:32.897 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.6
+2017-12-26 19:51:32.976 [localhost-startStop-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2017-12-26 19:51:35.309 [main] DEBUG net.tanpeng.tanpen.config.listener.ApplicationEventListener - 应用刷新
+2017-12-26 19:51:35.318 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2017-12-26 19:51:35.327 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler [http-nio-8080]
+2017-12-26 19:51:35.344 [main] INFO  org.apache.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+2017-12-26 19:51:35.360 [main] DEBUG net.tanpeng.tanpen.config.listener.ApplicationEventListener - 应用已启动完成
+2017-12-26 19:51:35.361 [main] INFO  net.tanpeng.tanpen.Application - Started Application in 4.759 seconds (JVM running for 6.094)
+2017-12-26 19:51:35.361 [main] DEBUG net.tanpeng.tanpen.Application - start success
+2017-12-26 19:51:49.755 [http-nio-8080-exec-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2017-12-26 19:52:38.128 [Thread-13] DEBUG net.tanpeng.tanpen.config.listener.ApplicationEventListener - 应用关闭
+2017-12-26 19:52:42.398 [main] DEBUG net.tanpeng.tanpen.config.listener.ApplicationEventListener - 初始化环境变量
+2017-12-26 19:52:42.492 [main] INFO  net.tanpeng.tanpen.Application - Starting Application on localhost with PID 21206 (/Users/enterprising/IdeaProjects/tanpen/target/classes started by enterprising in /Users/enterprising/IdeaProjects/tanpen)
+2017-12-26 19:52:42.492 [main] DEBUG net.tanpeng.tanpen.Application - Running with Spring Boot v1.4.2.RELEASE, Spring v4.3.4.RELEASE
+2017-12-26 19:52:42.493 [main] INFO  net.tanpeng.tanpen.Application - No active profile set, falling back to default profiles: default
+2017-12-26 19:52:42.596 [main] DEBUG net.tanpeng.tanpen.config.listener.ApplicationEventListener - 初始化环境变量完成
+2017-12-26 19:52:42.675 [background-preinit] DEBUG org.jboss.logging - Logging Provider: org.jboss.logging.Slf4jLoggerProvider found via system property
+2017-12-26 19:52:44.241 [main] INFO  org.apache.catalina.core.StandardService - Starting service Tomcat
+2017-12-26 19:52:44.242 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.6
+2017-12-26 19:52:44.320 [localhost-startStop-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2017-12-26 19:52:46.033 [main] DEBUG net.tanpeng.tanpen.config.listener.ApplicationEventListener - 应用刷新
+2017-12-26 19:52:46.041 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2017-12-26 19:52:46.049 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler [http-nio-8080]
+2017-12-26 19:52:46.065 [main] INFO  org.apache.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+2017-12-26 19:52:46.079 [main] DEBUG net.tanpeng.tanpen.config.listener.ApplicationEventListener - 应用已启动完成
+2017-12-26 19:52:46.080 [main] INFO  net.tanpeng.tanpen.Application - Started Application in 3.899 seconds (JVM running for 5.227)
+2017-12-26 19:52:46.080 [main] DEBUG net.tanpeng.tanpen.Application - start success
+2017-12-26 19:53:23.171 [http-nio-8080-exec-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2017-12-26 19:53:34.823 [Thread-12] DEBUG net.tanpeng.tanpen.config.listener.ApplicationEventListener - 应用关闭
+2017-12-26 19:53:37.312 [main] DEBUG net.tanpeng.tanpen.config.listener.ApplicationEventListener - 初始化环境变量
+2017-12-26 19:53:37.452 [main] INFO  net.tanpeng.tanpen.Application - Starting Application on localhost with PID 21253 (/Users/enterprising/IdeaProjects/tanpen/target/classes started by enterprising in /Users/enterprising/IdeaProjects/tanpen)
+2017-12-26 19:53:37.452 [main] DEBUG net.tanpeng.tanpen.Application - Running with Spring Boot v1.4.2.RELEASE, Spring v4.3.4.RELEASE
+2017-12-26 19:53:37.453 [main] INFO  net.tanpeng.tanpen.Application - No active profile set, falling back to default profiles: default
+2017-12-26 19:53:37.577 [main] DEBUG net.tanpeng.tanpen.config.listener.ApplicationEventListener - 初始化环境变量完成
+2017-12-26 19:53:37.619 [background-preinit] DEBUG org.jboss.logging - Logging Provider: org.jboss.logging.Slf4jLoggerProvider found via system property
+2017-12-26 19:53:39.318 [main] INFO  org.apache.catalina.core.StandardService - Starting service Tomcat
+2017-12-26 19:53:39.319 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.6
+2017-12-26 19:53:39.389 [localhost-startStop-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2017-12-26 19:53:41.245 [main] DEBUG net.tanpeng.tanpen.config.listener.ApplicationEventListener - 应用刷新
+2017-12-26 19:53:41.254 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2017-12-26 19:53:41.269 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler [http-nio-8080]
+2017-12-26 19:53:41.292 [main] INFO  org.apache.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+2017-12-26 19:53:41.312 [main] DEBUG net.tanpeng.tanpen.config.listener.ApplicationEventListener - 应用已启动完成
+2017-12-26 19:53:41.314 [main] INFO  net.tanpeng.tanpen.Application - Started Application in 4.217 seconds (JVM running for 5.437)
+2017-12-26 19:53:41.314 [main] DEBUG net.tanpeng.tanpen.Application - start success
+2017-12-26 19:53:56.955 [http-nio-8080-exec-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2017-12-26 20:50:36.904 [Thread-12] DEBUG net.tanpeng.tanpen.config.listener.ApplicationEventListener - 应用关闭
+2017-12-26 20:50:42.887 [main] DEBUG net.tanpeng.tanpen.config.listener.ApplicationEventListener - 初始化环境变量
+2017-12-26 20:50:43.128 [main] INFO  net.tanpeng.tanpen.Application - Starting Application on localhost with PID 24297 (/Users/enterprising/IdeaProjects/tanpen/target/classes started by enterprising in /Users/enterprising/IdeaProjects/tanpen)
+2017-12-26 20:50:43.132 [main] DEBUG net.tanpeng.tanpen.Application - Running with Spring Boot v1.4.2.RELEASE, Spring v4.3.4.RELEASE
+2017-12-26 20:50:43.132 [main] INFO  net.tanpeng.tanpen.Application - No active profile set, falling back to default profiles: default
+2017-12-26 20:50:43.270 [main] DEBUG net.tanpeng.tanpen.config.listener.ApplicationEventListener - 初始化环境变量完成
+2017-12-26 20:50:43.307 [background-preinit] DEBUG org.jboss.logging - Logging Provider: org.jboss.logging.Slf4jLoggerProvider found via system property
+2017-12-26 20:50:45.982 [main] INFO  org.apache.catalina.core.StandardService - Starting service Tomcat
+2017-12-26 20:50:45.983 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.6
+2017-12-26 20:50:46.087 [localhost-startStop-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2017-12-26 20:50:48.484 [main] DEBUG net.tanpeng.tanpen.config.listener.ApplicationEventListener - 应用刷新
+2017-12-26 20:50:48.495 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2017-12-26 20:50:48.508 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler [http-nio-8080]
+2017-12-26 20:50:48.527 [main] INFO  org.apache.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+2017-12-26 20:50:48.544 [main] DEBUG net.tanpeng.tanpen.config.listener.ApplicationEventListener - 应用已启动完成
+2017-12-26 20:50:48.545 [main] INFO  net.tanpeng.tanpen.Application - Started Application in 5.879 seconds (JVM running for 7.727)
+2017-12-26 20:50:48.545 [main] DEBUG net.tanpeng.tanpen.Application - start success
+2017-12-26 20:50:54.533 [http-nio-8080-exec-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2017-12-26 21:42:41.298 [Thread-15] DEBUG net.tanpeng.tanpen.config.listener.ApplicationEventListener - 应用关闭
+2017-12-26 21:43:17.405 [main] DEBUG net.tanpeng.tanpen.config.listener.ApplicationEventListener - 初始化环境变量
+2017-12-26 21:43:17.813 [main] INFO  net.tanpeng.tanpen.Application - Starting Application on localhost with PID 25320 (/Users/enterprising/IdeaProjects/tanpen/target/classes started by enterprising in /Users/enterprising/IdeaProjects/tanpen)
+2017-12-26 21:43:17.815 [main] DEBUG net.tanpeng.tanpen.Application - Running with Spring Boot v1.4.2.RELEASE, Spring v4.3.4.RELEASE
+2017-12-26 21:43:17.815 [main] INFO  net.tanpeng.tanpen.Application - No active profile set, falling back to default profiles: default
+2017-12-26 21:43:17.877 [main] DEBUG net.tanpeng.tanpen.config.listener.ApplicationEventListener - 初始化环境变量完成
+2017-12-26 21:43:18.087 [background-preinit] DEBUG org.jboss.logging - Logging Provider: org.jboss.logging.Slf4jLoggerProvider found via system property
+2017-12-26 21:43:20.851 [main] INFO  org.apache.catalina.core.StandardService - Starting service Tomcat
+2017-12-26 21:43:20.852 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.6
+2017-12-26 21:43:20.935 [localhost-startStop-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2017-12-26 21:43:23.767 [main] DEBUG net.tanpeng.tanpen.config.listener.ApplicationEventListener - 应用刷新
+2017-12-26 21:43:23.776 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2017-12-26 21:43:23.787 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler [http-nio-8080]
+2017-12-26 21:43:23.806 [main] INFO  org.apache.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+2017-12-26 21:43:23.822 [main] DEBUG net.tanpeng.tanpen.config.listener.ApplicationEventListener - 应用已启动完成
+2017-12-26 21:43:23.823 [main] INFO  net.tanpeng.tanpen.Application - Started Application in 6.949 seconds (JVM running for 8.189)
+2017-12-26 21:43:23.823 [main] DEBUG net.tanpeng.tanpen.Application - start success
+2017-12-26 21:43:32.399 [http-nio-8080-exec-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2017-12-26 21:46:11.909 [Thread-17] DEBUG net.tanpeng.tanpen.config.listener.ApplicationEventListener - 应用关闭
+2017-12-26 21:46:15.457 [main] DEBUG net.tanpeng.tanpen.config.listener.ApplicationEventListener - 初始化环境变量
+2017-12-26 21:46:15.590 [main] INFO  net.tanpeng.tanpen.Application - Starting Application on localhost with PID 25502 (/Users/enterprising/IdeaProjects/tanpen/target/classes started by enterprising in /Users/enterprising/IdeaProjects/tanpen)
+2017-12-26 21:46:15.591 [main] DEBUG net.tanpeng.tanpen.Application - Running with Spring Boot v1.4.2.RELEASE, Spring v4.3.4.RELEASE
+2017-12-26 21:46:15.592 [main] INFO  net.tanpeng.tanpen.Application - No active profile set, falling back to default profiles: default
+2017-12-26 21:46:15.798 [main] DEBUG net.tanpeng.tanpen.config.listener.ApplicationEventListener - 初始化环境变量完成
+2017-12-26 21:46:15.819 [background-preinit] DEBUG org.jboss.logging - Logging Provider: org.jboss.logging.Slf4jLoggerProvider found via system property
+2017-12-26 21:46:17.459 [main] INFO  org.apache.catalina.core.StandardService - Starting service Tomcat
+2017-12-26 21:46:17.460 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.6
+2017-12-26 21:46:17.527 [localhost-startStop-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2017-12-26 21:46:19.431 [main] DEBUG net.tanpeng.tanpen.config.listener.ApplicationEventListener - 应用刷新
+2017-12-26 21:46:19.449 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2017-12-26 21:46:19.463 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler [http-nio-8080]
+2017-12-26 21:46:19.487 [main] INFO  org.apache.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+2017-12-26 21:46:19.518 [main] DEBUG net.tanpeng.tanpen.config.listener.ApplicationEventListener - 应用已启动完成
+2017-12-26 21:46:19.519 [main] INFO  net.tanpeng.tanpen.Application - Started Application in 4.28 seconds (JVM running for 5.517)
+2017-12-26 21:46:19.520 [main] DEBUG net.tanpeng.tanpen.Application - start success
+2017-12-26 21:46:23.964 [http-nio-8080-exec-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2017-12-26 21:47:47.431 [Thread-12] DEBUG net.tanpeng.tanpen.config.listener.ApplicationEventListener - 应用关闭
+2017-12-26 21:47:52.113 [main] DEBUG net.tanpeng.tanpen.config.listener.ApplicationEventListener - 初始化环境变量
+2017-12-26 21:47:52.227 [main] INFO  net.tanpeng.tanpen.Application - Starting Application on localhost with PID 25581 (/Users/enterprising/IdeaProjects/tanpen/target/classes started by enterprising in /Users/enterprising/IdeaProjects/tanpen)
+2017-12-26 21:47:52.228 [main] DEBUG net.tanpeng.tanpen.Application - Running with Spring Boot v1.4.2.RELEASE, Spring v4.3.4.RELEASE
+2017-12-26 21:47:52.228 [main] INFO  net.tanpeng.tanpen.Application - No active profile set, falling back to default profiles: default
+2017-12-26 21:47:52.313 [main] DEBUG net.tanpeng.tanpen.config.listener.ApplicationEventListener - 初始化环境变量完成
+2017-12-26 21:47:52.503 [background-preinit] DEBUG org.jboss.logging - Logging Provider: org.jboss.logging.Slf4jLoggerProvider found via system property
+2017-12-26 21:47:54.257 [main] INFO  org.apache.catalina.core.StandardService - Starting service Tomcat
+2017-12-26 21:47:54.258 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.6
+2017-12-26 21:47:54.334 [localhost-startStop-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2017-12-26 21:47:56.315 [main] DEBUG net.tanpeng.tanpen.config.listener.ApplicationEventListener - 应用刷新
+2017-12-26 21:47:56.327 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2017-12-26 21:47:56.337 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler [http-nio-8080]
+2017-12-26 21:47:56.358 [main] INFO  org.apache.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+2017-12-26 21:47:56.379 [main] DEBUG net.tanpeng.tanpen.config.listener.ApplicationEventListener - 应用已启动完成
+2017-12-26 21:47:56.380 [main] INFO  net.tanpeng.tanpen.Application - Started Application in 4.527 seconds (JVM running for 6.039)
+2017-12-26 21:47:56.381 [main] DEBUG net.tanpeng.tanpen.Application - start success
+2017-12-26 21:47:59.429 [http-nio-8080-exec-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2017-12-26 21:49:48.707 [Thread-12] DEBUG net.tanpeng.tanpen.config.listener.ApplicationEventListener - 应用关闭
+2017-12-26 21:49:58.895 [main] DEBUG net.tanpeng.tanpen.config.listener.ApplicationEventListener - 初始化环境变量
+2017-12-26 21:49:58.987 [main] INFO  net.tanpeng.tanpen.Application - Starting Application on localhost with PID 25685 (/Users/enterprising/IdeaProjects/tanpen/target/classes started by enterprising in /Users/enterprising/IdeaProjects/tanpen)
+2017-12-26 21:49:58.988 [main] DEBUG net.tanpeng.tanpen.Application - Running with Spring Boot v1.4.2.RELEASE, Spring v4.3.4.RELEASE
+2017-12-26 21:49:58.988 [main] INFO  net.tanpeng.tanpen.Application - No active profile set, falling back to default profiles: default
+2017-12-26 21:49:59.043 [main] DEBUG net.tanpeng.tanpen.config.listener.ApplicationEventListener - 初始化环境变量完成
+2017-12-26 21:49:59.248 [background-preinit] DEBUG org.jboss.logging - Logging Provider: org.jboss.logging.Slf4jLoggerProvider found via system property
+2017-12-26 21:50:01.708 [main] INFO  org.apache.catalina.core.StandardService - Starting service Tomcat
+2017-12-26 21:50:01.709 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.6
+2017-12-26 21:50:01.796 [localhost-startStop-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2017-12-26 21:50:04.200 [main] DEBUG net.tanpeng.tanpen.config.listener.ApplicationEventListener - 应用刷新
+2017-12-26 21:50:04.216 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2017-12-26 21:50:04.231 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler [http-nio-8080]
+2017-12-26 21:50:04.252 [main] INFO  org.apache.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+2017-12-26 21:50:04.274 [main] DEBUG net.tanpeng.tanpen.config.listener.ApplicationEventListener - 应用已启动完成
+2017-12-26 21:50:04.276 [main] INFO  net.tanpeng.tanpen.Application - Started Application in 5.585 seconds (JVM running for 6.756)
+2017-12-26 21:50:04.276 [main] DEBUG net.tanpeng.tanpen.Application - start success
+2017-12-26 21:50:07.695 [http-nio-8080-exec-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2017-12-26 23:26:10.487 [Thread-15] DEBUG net.tanpeng.tanpen.config.listener.ApplicationEventListener - 应用关闭
+2017-12-26 23:26:19.311 [main] DEBUG net.tanpeng.tanpen.config.listener.ApplicationEventListener - 初始化环境变量
+2017-12-26 23:26:19.527 [main] INFO  net.tanpeng.tanpen.Application - Starting Application on localhost with PID 28832 (/Users/enterprising/IdeaProjects/tanpen/target/classes started by enterprising in /Users/enterprising/IdeaProjects/tanpen)
+2017-12-26 23:26:19.528 [main] DEBUG net.tanpeng.tanpen.Application - Running with Spring Boot v1.4.2.RELEASE, Spring v4.3.4.RELEASE
+2017-12-26 23:26:19.529 [main] INFO  net.tanpeng.tanpen.Application - No active profile set, falling back to default profiles: default
+2017-12-26 23:26:19.612 [background-preinit] DEBUG org.jboss.logging - Logging Provider: org.jboss.logging.Slf4jLoggerProvider found via system property
+2017-12-26 23:26:19.630 [main] DEBUG net.tanpeng.tanpen.config.listener.ApplicationEventListener - 初始化环境变量完成
+2017-12-26 23:26:21.479 [main] INFO  org.apache.catalina.core.StandardService - Starting service Tomcat
+2017-12-26 23:26:21.480 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.6
+2017-12-26 23:26:21.554 [localhost-startStop-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2017-12-26 23:26:23.889 [main] DEBUG net.tanpeng.tanpen.config.listener.ApplicationEventListener - 应用刷新
+2017-12-26 23:26:23.902 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2017-12-26 23:26:23.915 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler [http-nio-8080]
+2017-12-26 23:26:23.940 [main] INFO  org.apache.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+2017-12-26 23:26:23.965 [main] DEBUG net.tanpeng.tanpen.config.listener.ApplicationEventListener - 应用已启动完成
+2017-12-26 23:26:23.966 [main] INFO  net.tanpeng.tanpen.Application - Started Application in 4.877 seconds (JVM running for 6.106)
+2017-12-26 23:26:23.966 [main] DEBUG net.tanpeng.tanpen.Application - start success
+2017-12-26 23:53:50.279 [Thread-13] DEBUG net.tanpeng.tanpen.config.listener.ApplicationEventListener - 应用关闭
+2017-12-26 23:53:53.500 [main] DEBUG net.tanpeng.tanpen.config.listener.ApplicationEventListener - 初始化环境变量
+2017-12-26 23:53:53.663 [main] INFO  net.tanpeng.tanpen.Application - Starting Application on localhost with PID 30178 (/Users/enterprising/IdeaProjects/tanpen/target/classes started by enterprising in /Users/enterprising/IdeaProjects/tanpen)
+2017-12-26 23:53:53.664 [main] DEBUG net.tanpeng.tanpen.Application - Running with Spring Boot v1.4.2.RELEASE, Spring v4.3.4.RELEASE
+2017-12-26 23:53:53.664 [main] INFO  net.tanpeng.tanpen.Application - No active profile set, falling back to default profiles: default
+2017-12-26 23:53:53.768 [main] DEBUG net.tanpeng.tanpen.config.listener.ApplicationEventListener - 初始化环境变量完成
+2017-12-26 23:53:53.872 [background-preinit] DEBUG org.jboss.logging - Logging Provider: org.jboss.logging.Slf4jLoggerProvider found via system property
+2017-12-26 23:53:55.785 [main] INFO  org.apache.catalina.core.StandardService - Starting service Tomcat
+2017-12-26 23:53:55.786 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.6
+2017-12-26 23:53:55.855 [localhost-startStop-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2017-12-26 23:53:58.086 [main] DEBUG net.tanpeng.tanpen.config.listener.ApplicationEventListener - 应用刷新
+2017-12-26 23:53:58.095 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2017-12-26 23:53:58.103 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler [http-nio-8080]
+2017-12-26 23:53:58.123 [main] INFO  org.apache.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+2017-12-26 23:53:58.139 [main] DEBUG net.tanpeng.tanpen.config.listener.ApplicationEventListener - 应用已启动完成
+2017-12-26 23:53:58.140 [main] INFO  net.tanpeng.tanpen.Application - Started Application in 4.866 seconds (JVM running for 5.963)
+2017-12-26 23:53:58.140 [main] DEBUG net.tanpeng.tanpen.Application - start success
+2017-12-26 23:54:59.800 [Thread-13] DEBUG net.tanpeng.tanpen.config.listener.ApplicationEventListener - 应用关闭
+2017-12-26 23:55:03.017 [main] DEBUG net.tanpeng.tanpen.config.listener.ApplicationEventListener - 初始化环境变量
+2017-12-26 23:55:03.108 [main] INFO  net.tanpeng.tanpen.Application - Starting Application on localhost with PID 30237 (/Users/enterprising/IdeaProjects/tanpen/target/classes started by enterprising in /Users/enterprising/IdeaProjects/tanpen)
+2017-12-26 23:55:03.109 [main] DEBUG net.tanpeng.tanpen.Application - Running with Spring Boot v1.4.2.RELEASE, Spring v4.3.4.RELEASE
+2017-12-26 23:55:03.109 [main] INFO  net.tanpeng.tanpen.Application - No active profile set, falling back to default profiles: default
+2017-12-26 23:55:03.257 [main] DEBUG net.tanpeng.tanpen.config.listener.ApplicationEventListener - 初始化环境变量完成
+2017-12-26 23:55:03.363 [background-preinit] DEBUG org.jboss.logging - Logging Provider: org.jboss.logging.Slf4jLoggerProvider found via system property
+2017-12-26 23:55:05.114 [main] INFO  org.apache.catalina.core.StandardService - Starting service Tomcat
+2017-12-26 23:55:05.114 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.6
+2017-12-26 23:55:05.182 [localhost-startStop-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2017-12-26 23:55:07.361 [main] DEBUG net.tanpeng.tanpen.config.listener.ApplicationEventListener - 应用刷新
+2017-12-26 23:55:07.374 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2017-12-26 23:55:07.383 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler [http-nio-8080]
+2017-12-26 23:55:07.405 [main] INFO  org.apache.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+2017-12-26 23:55:07.421 [main] DEBUG net.tanpeng.tanpen.config.listener.ApplicationEventListener - 应用已启动完成
+2017-12-26 23:55:07.422 [main] INFO  net.tanpeng.tanpen.Application - Started Application in 4.63 seconds (JVM running for 5.716)
+2017-12-26 23:55:07.423 [main] DEBUG net.tanpeng.tanpen.Application - start success
+2017-12-26 23:55:56.001 [Thread-13] DEBUG net.tanpeng.tanpen.config.listener.ApplicationEventListener - 应用关闭
+2017-12-26 23:55:59.803 [main] DEBUG net.tanpeng.tanpen.config.listener.ApplicationEventListener - 初始化环境变量
+2017-12-26 23:55:59.909 [main] INFO  net.tanpeng.tanpen.Application - Starting Application on localhost with PID 30284 (/Users/enterprising/IdeaProjects/tanpen/target/classes started by enterprising in /Users/enterprising/IdeaProjects/tanpen)
+2017-12-26 23:55:59.910 [main] DEBUG net.tanpeng.tanpen.Application - Running with Spring Boot v1.4.2.RELEASE, Spring v4.3.4.RELEASE
+2017-12-26 23:55:59.910 [main] INFO  net.tanpeng.tanpen.Application - No active profile set, falling back to default profiles: default
+2017-12-26 23:56:00.001 [main] DEBUG net.tanpeng.tanpen.config.listener.ApplicationEventListener - 初始化环境变量完成
+2017-12-26 23:56:00.149 [background-preinit] DEBUG org.jboss.logging - Logging Provider: org.jboss.logging.Slf4jLoggerProvider found via system property
+2017-12-26 23:56:02.047 [main] INFO  org.apache.catalina.core.StandardService - Starting service Tomcat
+2017-12-26 23:56:02.048 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.6
+2017-12-26 23:56:02.113 [localhost-startStop-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2017-12-26 23:56:04.314 [main] DEBUG net.tanpeng.tanpen.config.listener.ApplicationEventListener - 应用刷新
+2017-12-26 23:56:04.324 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2017-12-26 23:56:04.335 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler [http-nio-8080]
+2017-12-26 23:56:04.354 [main] INFO  org.apache.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+2017-12-26 23:56:04.371 [main] DEBUG net.tanpeng.tanpen.config.listener.ApplicationEventListener - 应用已启动完成
+2017-12-26 23:56:04.372 [main] INFO  net.tanpeng.tanpen.Application - Started Application in 4.928 seconds (JVM running for 6.204)
+2017-12-26 23:56:04.372 [main] DEBUG net.tanpeng.tanpen.Application - start success
+2017-12-26 23:56:33.557 [Thread-14] DEBUG net.tanpeng.tanpen.config.listener.ApplicationEventListener - 应用关闭
+2017-12-26 23:56:36.918 [main] DEBUG net.tanpeng.tanpen.config.listener.ApplicationEventListener - 初始化环境变量
+2017-12-26 23:56:37.107 [main] INFO  net.tanpeng.tanpen.Application - Starting Application on localhost with PID 30319 (/Users/enterprising/IdeaProjects/tanpen/target/classes started by enterprising in /Users/enterprising/IdeaProjects/tanpen)
+2017-12-26 23:56:37.139 [main] DEBUG net.tanpeng.tanpen.Application - Running with Spring Boot v1.4.2.RELEASE, Spring v4.3.4.RELEASE
+2017-12-26 23:56:37.191 [main] INFO  net.tanpeng.tanpen.Application - No active profile set, falling back to default profiles: default
+2017-12-26 23:56:37.336 [main] DEBUG net.tanpeng.tanpen.config.listener.ApplicationEventListener - 初始化环境变量完成
+2017-12-26 23:56:37.388 [background-preinit] DEBUG org.jboss.logging - Logging Provider: org.jboss.logging.Slf4jLoggerProvider found via system property
+2017-12-26 23:56:39.441 [main] INFO  org.apache.catalina.core.StandardService - Starting service Tomcat
+2017-12-26 23:56:39.442 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.6
+2017-12-26 23:56:39.513 [localhost-startStop-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2017-12-26 23:56:41.709 [main] DEBUG net.tanpeng.tanpen.config.listener.ApplicationEventListener - 应用刷新
+2017-12-26 23:56:41.728 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2017-12-26 23:56:41.738 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler [http-nio-8080]
+2017-12-26 23:56:41.757 [main] INFO  org.apache.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+2017-12-26 23:56:41.770 [main] DEBUG net.tanpeng.tanpen.config.listener.ApplicationEventListener - 应用已启动完成
+2017-12-26 23:56:41.772 [main] INFO  net.tanpeng.tanpen.Application - Started Application in 5.155 seconds (JVM running for 6.826)
+2017-12-26 23:56:41.772 [main] DEBUG net.tanpeng.tanpen.Application - start success
+2017-12-26 23:57:49.374 [Thread-14] DEBUG net.tanpeng.tanpen.config.listener.ApplicationEventListener - 应用关闭
+2017-12-26 23:57:58.349 [main] DEBUG net.tanpeng.tanpen.config.listener.ApplicationEventListener - 初始化环境变量
+2017-12-26 23:57:58.456 [main] INFO  net.tanpeng.tanpen.Application - Starting Application on localhost with PID 30389 (/Users/enterprising/IdeaProjects/tanpen/target/classes started by enterprising in /Users/enterprising/IdeaProjects/tanpen)
+2017-12-26 23:57:58.457 [main] DEBUG net.tanpeng.tanpen.Application - Running with Spring Boot v1.4.2.RELEASE, Spring v4.3.4.RELEASE
+2017-12-26 23:57:58.457 [main] INFO  net.tanpeng.tanpen.Application - No active profile set, falling back to default profiles: default
+2017-12-26 23:57:58.519 [main] DEBUG net.tanpeng.tanpen.config.listener.ApplicationEventListener - 初始化环境变量完成
+2017-12-26 23:57:58.586 [background-preinit] DEBUG org.jboss.logging - Logging Provider: org.jboss.logging.Slf4jLoggerProvider found via system property
+2017-12-26 23:58:00.688 [main] INFO  org.apache.catalina.core.StandardService - Starting service Tomcat
+2017-12-26 23:58:00.689 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.6
+2017-12-26 23:58:00.773 [localhost-startStop-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2017-12-26 23:58:01.281 [main] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+2017-12-26 23:58:03.131 [main] DEBUG net.tanpeng.tanpen.config.listener.ApplicationEventListener - 应用刷新
+2017-12-26 23:58:03.152 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2017-12-26 23:58:03.179 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler [http-nio-8080]
+2017-12-26 23:58:03.217 [main] INFO  org.apache.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+2017-12-26 23:58:03.235 [main] DEBUG net.tanpeng.tanpen.config.listener.ApplicationEventListener - 应用已启动完成
+2017-12-26 23:58:03.236 [main] INFO  net.tanpeng.tanpen.Application - Started Application in 5.085 seconds (JVM running for 6.251)
+2017-12-26 23:58:03.236 [main] DEBUG net.tanpeng.tanpen.Application - start success

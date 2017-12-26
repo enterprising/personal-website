@@ -1,3 +1,19 @@
+
+.settings/
+.project
+.classpath
+.DS_Store
+target/
+tmp/
+gradle/
+
+# idea
+.idea
+*.eml
+*.iml
+*.class
+
+
 target/
 !.mvn/wrapper/maven-wrapper.jar
 

@@ -57,21 +57,20 @@
 
                 <div class="collapse navbar-toggleable-sm" id="tmNavbar">
                     <ul class="nav navbar-nav">
-                        <li class="nav-item">
-                            <a href="${ctx!}/html/jsp/index.jsp" class="nav-link">主页</a>
-                        </li>
+                        <li class="nav-item"><a
+                                href="/"
+                                class="nav-link">主页</a></li>
                         <li class="nav-item">
                             <a href="/about" class="nav-link">简历</a>
                         </li>
                         <li class="nav-item"><a
                                 href="http://blog.tanpeng.net" target="_blank"
-                                class="nav-link">博客</a></li>
-                        <li class="nav-item active">
-                            <a href="${ctx!}/html/jsp/contact.jsp" class="nav-link">联系</a>
-                        </li>
+                                class="nav-link" onclick="boke()">博客</a></li>
+                        <li class="nav-item active" id="lianxi"><a
+                                href="/contact"
+                                class="nav-link">联系</a></li>
                     </ul>
                 </div>
-
             </nav>
 
         </div>
@@ -89,22 +88,22 @@
                     <h3 class="tm-gold-text tm-form-title">欢迎留下你想说的话</h3>
                     <p class="tm-form-description">在下面的表格里输入你的姓名、邮箱、主题以及具体想说的话。点击提交,我就能收到你的邮件。</p>
 
-                    <form action="../message.do?p=sendMes" method="post"
+                    <form action="" method="post"
                           class="tm-contact-form" id="tm-contact-form">
                         <div class="form-group">
-                            <input type="text" id="contact_name" name="contact_name"
+                            <input type="text" id="messageName" name="messageName"
                                    class="form-control" placeholder="Name" required/>
                         </div>
                         <div class="form-group">
-                            <input type="email" id="contact_email" name="contact_email"
+                            <input type="email" id="mesageMail" name="mesageMail"
                                    class="form-control" placeholder="Email" required/>
                         </div>
                         <div class="form-group">
-                            <input type="text" id="contact_subject" name="contact_subject"
+                            <input type="text" id="messageTitle" name="messageTitle"
                                    class="form-control" placeholder="Subject" required/>
                         </div>
                         <div class="form-group">
-						<textarea rows="10" cols="" id="content" class="form-control" name="content"
+						<textarea rows="10" cols="" id="messageContent" class="form-control" name="messageContent"
                                   placeholder="Message" required></textarea>
                         </div>
 
@@ -184,28 +183,53 @@
 <!-- Bootstrap (http://v4-alpha.getbootstrap.com/) -->
 
 <script>
+
+    function boke() {
+        var li = document.getElementById("lianxi");
+        li.setAttribute('class', 'nav-item');
+    }
+
     $(document).ready(function () {
         //使用jQuery异步提交表单
-        $('#tm-contact-form').submit(function () {
-            jQuery.ajax({
-                url: '../message.do?p=sendMes',
-                data: $('#tm-contact-form').serialize(),
+        $("#tm-contact-form").submit(function () {
+            $.ajax({
                 type: "POST",
-                beforeSend: function () {
-                    //在异步提交前要做的操作
-                },
+                dataType: "json",
+                url: "/contact/send",
+                data: $('#tm-contact-form').serialize(),
                 success: function () {
                     layer.alert('发送成功！', {
                         skin: 'layui-layer-molv' //样式类名
                         , closeBtn: 0
                     }, function () {
-                        location = "${ctx!}/html/jsp/contact.jsp";
+                        location = "/contact";
                     });
                 }
-            });
-            return false;
+            }
         });
     });
+
+
+    //            $('#tm-contact-form').submit(function () {
+    //                jQuery.ajax({
+    //                    url: '/contact/send',
+    //                    data: $('#tm-contact-form').serialize(),
+    //                    type: "POST",
+    //                    beforeSend: function () {
+    //                        //在异步提交前要做的操作
+    //                    },
+    //                    success: function () {
+    //                        layer.alert('发送成功！', {
+    //                            skin: 'layui-layer-molv' //样式类名
+    //                            , closeBtn: 0
+    //                        }, function () {
+    //                            location = "/contact";
+    //                        });
+    //                    }
+    //                });
+    //                return false;
+    //            });
+    //        });
 </script>
 </body>
 </html>

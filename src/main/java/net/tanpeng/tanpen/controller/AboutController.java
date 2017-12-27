@@ -17,7 +17,7 @@ public class AboutController {
 
         System.out.println("controller-about");
 
-        return "admin/about";
+        return "admin/resume";
     }
 
 }

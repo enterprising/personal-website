@@ -45,16 +45,16 @@
                 <div class="collapse navbar-toggleable-sm" id="tmNavbar">
                     <ul class="nav navbar-nav">
                         <li class="nav-item"><a
-                                href="${ctx!}/html/jsp/index.jsp"
+                                href="/"
                                 class="nav-link">主页</a></li>
-                        <li class="nav-item active">
+                        <li class="nav-item active" id="jianli">
                             <a href="/about" class="nav-link">简历</a>
                         </li>
                         <li class="nav-item"><a
-                                href="${ctx!}/html/jsp/blog.jsp"
-                                class="nav-link">博客</a></li>
+                                href="http://blog.tanpeng.net" target="_blank"
+                                class="nav-link" onclick="boke()">博客</a></li>
                         <li class="nav-item"><a
-                                href="${ctx!}/html/jsp/contact.jsp"
+                                href="/contact"
                                 class="nav-link">联系</a></li>
                     </ul>
                 </div>
@@ -94,6 +94,16 @@
 <!-- Tether for Bootstrap, http://stackoverflow.com/questions/34567939/how-to-fix-the-error-error-bootstrap-tooltips-require-tether-http-github-h -->
 <script src="${ctx!}/html/js/bootstrap.min.js"></script>
 <!-- Bootstrap (http://v4-alpha.getbootstrap.com/) -->
+
+<script>
+
+    function boke() {
+        var li = document.getElementById("jianli");
+        li.setAttribute('class','nav-item');
+    }
+
+</script>
+
 
 </body>
 </html>

@@ -39,17 +39,17 @@
 
                 <div class="collapse navbar-toggleable-sm" id="tmNavbar">
                     <ul class="nav navbar-nav">
-                        <li class="nav-item active"><a
-                                href="${ctx!}/html/jsp/index.jsp"
+                        <li class="nav-item active" id="zhuye"><a
+                                href="/"
                                 class="nav-link">主页</a></li>
                         <li class="nav-item">
                             <a href="/about" class="nav-link">简历</a>
                         </li>
                         <li class="nav-item"><a
                                 href="http://blog.tanpeng.net" target="_blank"
-                                class="nav-link">博客</a></li>
+                                class="nav-link" onclick="boke()">博客</a></li>
                         <li class="nav-item"><a
-                                href="${ctx!}/html/jsp/contact.jsp"
+                                href="/contact"
                                 class="nav-link">联系</a></li>
                     </ul>
                 </div>
@@ -79,12 +79,12 @@
                             src="${ctx!}/html/img/tm-img-310x180-1.jpg"
                             alt="Image" class="tm-margin-b-20 img-fluid"/>
                     <h4 class="tm-margin-b-20 tm-gold-text">所获荣誉</h4>
-                    <p class="tm-margin-b-20">校级二等奖学金</p>
-                    <p class="tm-margin-b-20">校级优秀团员</p>
-                    <p class="tm-margin-b-20">优秀学生干部</p>
-                    <p class="tm-margin-b-20">牛客网编程之星</p>
-                    <p class="tm-margin-b-20">程序设计竞赛校赛第二名</p>
-                    <a href="${ctx!}/html/jsp/resume.jsp" target="_blank" class="tm-btn text-uppercase">查看更多</a>
+
+                    <#list honours as honour>
+                        <p class="tm-margin-b-20">${honour.name}</p>
+                    </#list>
+
+                    <a href="/about" class="tm-btn text-uppercase">查看更多</a>
                 </div>
 
             </div>
@@ -96,12 +96,12 @@
                             src="${ctx!}/html/img/tm-img-310x180-2.jpg"
                             alt="Image" class="tm-margin-b-20 img-fluid"/>
                     <h4 class="tm-margin-b-20 tm-gold-text">个人经历</h4>
-                    <p class="tm-margin-b-20">班长/入学-至今</p>
-                    <p class="tm-margin-b-20">计算机学院14级素质提升班/2015.10-至今</p>
-                    <p class="tm-margin-b-20">大班助（学生辅导员）/2016.9</p>
-                    <p class="tm-margin-b-20">卓越团队成员/2017.3~2017.6</p>
-                    <p class="tm-margin-b-20">饿了么/2017.6~至今</p>
-                    <a href="${ctx!}/html/jsp/resume.jsp" target="_blank" class="tm-btn text-uppercase">查看更多</a>
+
+                    <#list experiences as experience>
+                        <p class="tm-margin-b-20">${experience.name}</p>
+                    </#list>
+
+                    <a href="/about" class="tm-btn text-uppercase">查看更多</a>
                 </div>
 
             </div>
@@ -113,12 +113,12 @@
                             src="${ctx!}/html/img/tm-img-310x180-3.jpg"
                             alt="Image" class="tm-margin-b-20 img-fluid"/>
                     <h4 class="tm-margin-b-20 tm-gold-text">技能</h4>
-                    <p class="tm-margin-b-20">熟练掌握Java</p>
-                    <p class="tm-margin-b-20">熟练掌握函数式编程</p>
-                    <p class="tm-margin-b-20">掌握常用数据结构与算法</p>
-                    <p class="tm-margin-b-20">掌握常用设计模式</p>
-                    <p class="tm-margin-b-20">了解SOA</p>
-                    <a href="${ctx!}/html/jsp/resume.jsp" target="_blank" class="tm-btn text-uppercase">查看更多</a>
+
+                    <#list skills as skill>
+                        <p class="tm-margin-b-20">${skill.name}</p>
+                    </#list>
+
+                    <a href="/about" class="tm-btn text-uppercase">查看更多</a>
                 </div>
 
             </div>
@@ -130,23 +130,24 @@
                             src="${ctx!}/html/img/tm-img-310x180-4.jpg"
                             alt="Image" class="tm-margin-b-20 img-fluid"/>
                     <h4 class="tm-margin-b-20 tm-gold-text">兴趣爱好</h4>
-                    <p class="tm-margin-b-20">编程</p>
-                    <p class="tm-margin-b-20">最新的科技前沿知识</p>
-                    <p class="tm-margin-b-20">运动、健身，特别是跑步</p>
-                    <p class="tm-margin-b-20">电影、动漫，深爱海贼王</p>
-                    <a href="${ctx!}/html/jsp/resume.jsp" target="_blank" class="tm-btn text-uppercase">查看更多</a>
+
+                    <#list interests as interest>
+                        <p class="tm-margin-b-20">${interest.name}</p>
+                    </#list>
+
+                    <a href="/about" class="tm-btn text-uppercase">查看更多</a>
                 </div>
 
             </div>
         </div>
 
         <div class="row tm-margin-t-big">
-            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-10 col-xl-10">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-9 col-xl-9">
                 <h1 class="tm-gold-text tm-title">关于我</h1><br/>
                 　　我叫谭鹏，就读于湖南工业大学–计算机学院–计算机科学与技术专业，目前大四，对计算机相关知识有着浓厚兴趣。<br/>
                 　　虽然我的名字特别容易重名，但拥有tanpeng.net这个域名的就我一个~<br/>
                 　　至于技术方向，个人还是偏向于后台研发，偏算法。<br/>
-                   作为一名合格计算机人，我对计算机相关知识一直都有着较为浓厚的兴趣，体现在几个方面：第一个是在所有计算机相关的专业课，我几乎都是90分以上，好几门还是专业第一。第二个是，我在课外会花很多时间学习计算机相关的知识。
+                作为一名合格计算机人，我对计算机相关知识一直都有着较为浓厚的兴趣，体现在几个方面：第一个是在所有计算机相关的专业课，我几乎都是90分以上，好几门还是专业第一。第二个是，我在课外会花很多时间学习计算机相关的知识。
                 　　当然，我也不是一位只会技术的程序猿。大学至今一直担任所在班级的班长，并且组织过不少活动，带领班上同学收获过不少校级集体荣誉。同时我还特别喜欢跑步和健身，毕竟一个人只有全面发展才能适应这个复杂的社会嘛。<br/>
                 　　现在在饿了么工作，负责数据库中间件相关的一些东西。
 
@@ -159,7 +160,7 @@
             </div>
 
 
-            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-2 col-xl-2">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-3 col-xl-3">
 
                 <div class="tm-1-col-right">
 
@@ -172,9 +173,9 @@
                                 <nav>
                                     <ul class="nav">
 
-                                        <#list links as link>
-                                            <li><a href="${link.url }" target="_blank" class="tm-text-link">${link.name }</a></li>
-                                        </#list>
+                                    <#list links as link>
+                                        <li><a href="${link.url }" target="_blank" class="tm-text-link">${link.name }</a></li>
+                                    </#list>
 
                                     </ul>
                                 </nav>
@@ -216,6 +217,16 @@
 <!-- Tether for Bootstrap, http://stackoverflow.com/questions/34567939/how-to-fix-the-error-error-bootstrap-tooltips-require-tether-http-github-h -->
 <script src="${ctx!}/html/js/bootstrap.min.js"></script>
 <!-- Bootstrap (http://v4-alpha.getbootstrap.com/) -->
+
+<script>
+
+    function boke() {
+        var li = document.getElementById("zhuye");
+        li.setAttribute('class','nav-item');
+    }
+
+</script>
+
 
 </body>
 </html>

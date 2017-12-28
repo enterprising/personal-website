@@ -205,31 +205,11 @@
                         location = "/contact";
                     });
                 }
-            }
+            });
+            return false;
         });
     });
 
-
-    //            $('#tm-contact-form').submit(function () {
-    //                jQuery.ajax({
-    //                    url: '/contact/send',
-    //                    data: $('#tm-contact-form').serialize(),
-    //                    type: "POST",
-    //                    beforeSend: function () {
-    //                        //在异步提交前要做的操作
-    //                    },
-    //                    success: function () {
-    //                        layer.alert('发送成功！', {
-    //                            skin: 'layui-layer-molv' //样式类名
-    //                            , closeBtn: 0
-    //                        }, function () {
-    //                            location = "/contact";
-    //                        });
-    //                    }
-    //                });
-    //                return false;
-    //            });
-    //        });
 </script>
 </body>
 </html>

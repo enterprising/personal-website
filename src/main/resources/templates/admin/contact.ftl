@@ -60,9 +60,6 @@
                         <li class="nav-item"><a
                                 href="/"
                                 class="nav-link">主页</a></li>
-                        <li class="nav-item">
-                            <a href="/about" class="nav-link">简历</a>
-                        </li>
                         <li class="nav-item"><a
                                 href="http://blog.tanpeng.net" target="_blank"
                                 class="nav-link" onclick="boke()">博客</a></li>
